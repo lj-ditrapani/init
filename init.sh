@@ -3,4 +3,4 @@
 sudo apt-get -y install puppet git
 rm -fr ~/puppet
 git clone https://github.com/lj-ditrapani/puppet.git ~/puppet
-/usr/bin/puppet apply ~/puppet/puppet.pp
+sudo /usr/bin/puppet apply ~/puppet/puppet.pp
