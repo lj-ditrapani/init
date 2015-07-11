@@ -8,7 +8,6 @@ sudo apt-get -y install \
     zsh-lovers \
     vim-doc \
     vim-nox \
-    wicd-curses \
     alsa-utils \
 \
     xorg \

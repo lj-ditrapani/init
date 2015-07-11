@@ -36,3 +36,6 @@ rm -fr ~/.vim/bundle/vim-coffee-script
 mkdir -p ~/.vim/autoload ~/.vim/bundle && \
     curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
 git clone https://github.com/kchmck/vim-coffee-script.git ~/.vim/bundle/vim-coffee-script/
+
+# This has a curses pop-up if ljd is not already in the netdev group
+sudo apt-get -y install wicd-curses
