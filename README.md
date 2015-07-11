@@ -1,7 +1,9 @@
-LJD Ubuntu Puppet
+LJD Ubuntu Init Script
 ===============================================================================
 
-    wget -O - https://raw.githubusercontent.com/lj-ditrapani/puppet/master/init.sh | bash
+Install all packages and configures everything the way I like it.
+
+    wget -O - https://raw.githubusercontent.com/lj-ditrapani/init/master/init.sh | bash
 
 Additional steps
 - Manually add ssh keys to .ssh
@@ -12,6 +14,6 @@ Additional steps
 TODO
 ----
 
-- change project name to init; not using puppet anymore
+- Don't pull repo, just install.sh file
 - set up firefox?
 - install docker latest or just ubuntu default?
