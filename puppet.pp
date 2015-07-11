@@ -108,7 +108,7 @@ $packages = [
 
 user { 'ljd':
     ensure => 'present',
-    shell => '/usr/bin/zsh',
+    shell  => '/usr/bin/zsh',
     groups => ['audio', 'video', 'netdev'],
 }
 
