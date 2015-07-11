@@ -106,6 +106,11 @@ $packages = [
     'gstreamer1.0-plugins-ugly',
 ]
 
+user { 'ljd':
+    ensure => 'present',
+    shell => '/usr/bin/zsh',
+}
+
 package { $packages:
     ensure => 'installed',
 }

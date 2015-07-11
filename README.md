@@ -11,3 +11,4 @@ TODO
 - Go through steps.txt
 - Set dotfiles remote url to ssh instead of http
 - secrets (ssh keys)??
+- Set ljd user shell to zsh
