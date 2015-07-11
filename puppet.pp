@@ -22,8 +22,6 @@ $packages = [
 
     # node
     'nodejs',
-    'nodejs-dev',
-    'npm',
 
     # python
     'python3-doc',
@@ -36,8 +34,16 @@ $packages = [
     'ruby-full',
     'ri',
     'ruby2.1-doc',
+
+    'curl',
 ]
 
 package { $packages:
-    ensure => 'installed'
+    ensure => 'installed',
 }
+
+exec { 'node':
+    command => '/usr/bin/curl -sL https://deb.nodesource.com/setup_0.12 | sudo /bin/bash -'
+}
+
+Package['curl'] -> Exec['node'] -> Package['nodejs']
