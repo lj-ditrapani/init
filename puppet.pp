@@ -46,4 +46,9 @@ exec { 'node':
     command => '/usr/bin/curl -sL https://deb.nodesource.com/setup_0.12 | sudo /bin/bash -'
 }
 
+exec { 'dotfiles':
+    command => '/bin/rm -rf ~/dotfiles && /usr/bin/git clone https://github.com/lj-ditrapani/dotfiles.git ~/ && sh ~/dotfiles/link.rb'
+}
+
 Package['curl'] -> Exec['node'] -> Package['nodejs']
+Package['git'] -> Exec['dotfiles']

@@ -6,7 +6,8 @@ LJD Ubuntu Puppet
 TODO
 ----
 
-- Set up node repo first before packages
 - Add & link dotfiles
 - Set up vim plugin bundles
 - Go through steps.txt
+- Set dotfiles remote url to ssh instead of http
+- secrets (ssh keys)??
