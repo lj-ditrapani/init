@@ -107,9 +107,10 @@ $packages = [
 ]
 
 user { 'ljd':
-    ensure => 'present',
-    shell  => '/usr/bin/zsh',
-    groups => ['audio', 'video', 'netdev'],
+    ensure  => 'present',
+    shell   => '/usr/bin/zsh',
+    groups  => ['audio', 'video', 'netdev'],
+    require => Package['zsh'],
 }
 
 package { $packages:
