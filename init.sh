@@ -9,8 +9,15 @@ sudo /usr/bin/puppet apply ~/puppet/puppet.pp
 rm -rf ~/dotfiles
 git clone https://github.com/lj-ditrapani/dotfiles.git
 ~/dotfiles/link.rb
+sudo systemctl stop sshd.service
 sudo systemctl disable sshd.service
-mkdir ~/local
-mkdir ~/usb
-mkdir ~/media
-mkdir ~/fun
+mkdir -p ~/local
+mkdir -p ~/usb
+mkdir -p ~/media
+mkdir -p ~/fun
+sudo npm install -g coffee-script jslint jshint coffeelint gulp
+sudo /usr/share/doc/libdvdread4/install-css.sh
+git config --global user.name "Lyall Jonathan Di Trapani"
+git config --global user.email lj.ditrapani@gmail.com
+git config --global core.editor vim
+git config --global push.default simple
