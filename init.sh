@@ -1,8 +1,7 @@
-# TODO: uncomment update, install and nodesource
-# sudo apt-get update
+sudo apt-get update
 cd ~
-# sudo apt-get -y install puppet git curl
-# curl -sL https://deb.nodesource.com/setup_0.12 | sudo /bin/bash -
+sudo apt-get -y install puppet git curl
+curl -sL https://deb.nodesource.com/setup_0.12 | sudo /bin/bash -
 rm -fr ~/puppet
 git clone https://github.com/lj-ditrapani/puppet.git ~/puppet
 sudo /usr/bin/puppet apply ~/puppet/puppet.pp
