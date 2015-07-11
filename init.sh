@@ -9,6 +9,7 @@ sudo /usr/bin/puppet apply ~/puppet/puppet.pp
 rm -rf ~/dotfiles
 git clone https://github.com/lj-ditrapani/dotfiles.git
 ~/dotfiles/link.rb
+sudo systemctl disable sshd.service
 mkdir ~/local
 mkdir ~/usb
 mkdir ~/media

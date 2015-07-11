@@ -6,9 +6,9 @@ LJD Ubuntu Puppet
 TODO
 ----
 
-- Add & link dotfiles
-- Set up vim plugin bundles
 - Go through steps.txt
+- Set up vim plugin bundles
 - Set dotfiles remote url to ssh instead of http
 - secrets (ssh keys)??
-- Set ljd user shell to zsh
+- set up firefox?
+- install docker latest or just ubuntu default?
