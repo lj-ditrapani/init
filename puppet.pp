@@ -36,6 +36,7 @@ $packages = [
     'ruby2.1-doc',
 
     'curl',
+    'git',
 ]
 
 package { $packages:
