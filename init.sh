@@ -1,11 +1,15 @@
 sudo apt-get update
-sudo apt-get -y install puppet git curl
+sudo apt-get -y install git curl
 curl -sL https://deb.nodesource.com/setup_0.12 | sudo /bin/bash -
 
 # puppet
 rm -fr ~/puppet
 git clone https://github.com/lj-ditrapani/puppet.git ~/puppet
-sudo /usr/bin/puppet apply ~/puppet/puppet.pp
+sudo ~/puppet/install.sh
+
+# setup user
+sudo chsh -s /usr/bin/zsh ljd
+sudo usermod -a -G audio,video,netdev ljd
 
 # dotfiles
 rm -rf ~/dotfiles

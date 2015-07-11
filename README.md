@@ -12,5 +12,6 @@ Additional steps
 TODO
 ----
 
+- change project name to init; not using puppet anymore
 - set up firefox?
 - install docker latest or just ubuntu default?
