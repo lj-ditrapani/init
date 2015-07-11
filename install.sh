@@ -1,4 +1,4 @@
-sudo apt-get install \
+sudo apt-get -y install \
 \
     zip \
     unzip \
