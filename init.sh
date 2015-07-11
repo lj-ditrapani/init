@@ -20,3 +20,6 @@ git config --global user.name "Lyall Jonathan Di Trapani"
 git config --global user.email lj.ditrapani@gmail.com
 git config --global core.editor vim
 git config --global push.default simple
+cd ~/dotfiles
+git remote set-url origin git@github.com:lj-ditrapani/dotfiles.git
+cd ~
