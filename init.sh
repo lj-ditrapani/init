@@ -3,9 +3,7 @@ sudo apt-get -y install git curl
 curl -sL https://deb.nodesource.com/setup_0.12 | sudo /bin/bash -
 
 # install packages
-rm -fr ~/init
-git clone https://github.com/lj-ditrapani/init.git ~/init
-sudo ~/init/install.sh
+curl https://raw.githubusercontent.com/lj-ditrapani/init/master/install.sh | sudo bash
 
 # setup user
 sudo chsh -s /usr/bin/zsh ljd
@@ -13,7 +11,6 @@ sudo usermod -a -G audio,video,netdev ljd
 
 # dotfiles
 rm -rf ~/dotfiles
-cd ~
 git clone https://github.com/lj-ditrapani/dotfiles.git ~/dotfiles
 ~/dotfiles/link.rb
 
@@ -24,7 +21,6 @@ mkdir -p ~/usb
 mkdir -p ~/media
 mkdir -p ~/fun
 sudo npm install -g coffee-script jslint jshint coffeelint gulp
-sudo /usr/share/doc/libdvdread4/install-css.sh
 
 # git setup
 git config --global user.name "Lyall Jonathan Di Trapani"
