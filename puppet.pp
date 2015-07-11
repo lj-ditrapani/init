@@ -55,7 +55,6 @@ $packages = [
     'gawk',
     'libssl-dev',
     'libyaml-dev',
-    'libyaml-dev',
     'libsqlite3-dev',
     'autoconf',
     'libgdbm-dev',
