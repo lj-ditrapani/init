@@ -35,7 +35,7 @@ sudo apt-get -y install \
     git \
     silversearcher-ag \
     xsel \
-    docker \
+    docker.io \
     tmux \
     openssh-server \
 \

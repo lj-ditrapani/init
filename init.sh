@@ -7,7 +7,7 @@ curl https://raw.githubusercontent.com/lj-ditrapani/init/master/install.sh | sud
 
 # setup user
 sudo chsh -s /usr/bin/zsh ljd
-sudo usermod -a -G audio,video,netdev ljd
+sudo usermod -a -G audio,video,netdev,docker ljd
 
 # dotfiles
 rm -rf ~/dotfiles
@@ -16,6 +16,8 @@ git clone https://github.com/lj-ditrapani/dotfiles.git ~/dotfiles
 
 sudo systemctl stop sshd.service
 sudo systemctl disable sshd.service
+sudo systemctl enable docker
+sudo systemctl restart docker.service
 mkdir -p ~/local
 mkdir -p ~/usb
 mkdir -p ~/media
