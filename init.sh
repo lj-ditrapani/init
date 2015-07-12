@@ -41,5 +41,3 @@ git clone https://github.com/kchmck/vim-coffee-script.git ~/.vim/bundle/vim-coff
 
 # This has a curses pop-up if ljd is not already in the netdev group
 sudo apt-get -y install wicd-curses
-
-rmdir Desktop Documents Music Pictures Public Templates Videos
