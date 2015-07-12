@@ -10,11 +10,10 @@ Additional steps
 
 - Manually add ssh keys to .ssh
 - Manually add passwords
-- Set up firefox
+- Log into firefox sync
 
 
 TODO
 ----
 
-- set up firefox?  Auto install add-ons?
 - install docker latest (1.7) or just ubuntu default (1.5)?
