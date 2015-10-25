@@ -1,6 +1,6 @@
 sudo apt-get update
 sudo apt-get -y install git curl
-curl -sL https://deb.nodesource.com/setup_0.12 | sudo /bin/bash -
+curl -L https://deb.nodesource.com/setup_0.12 | sudo /bin/bash -
 
 # install packages
 curl https://raw.githubusercontent.com/lj-ditrapani/init/master/install.sh | sudo bash
@@ -34,10 +34,8 @@ git remote set-url origin git@github.com:lj-ditrapani/dotfiles.git
 cd ~
 
 # Vim setup
-rm -fr ~/.vim/bundle/vim-coffee-script
-mkdir -p ~/.vim/autoload ~/.vim/bundle && \
-    curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
-git clone https://github.com/kchmck/vim-coffee-script.git ~/.vim/bundle/vim-coffee-script/
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+vim +PluginInstall +qall
 
 # This has a curses pop-up if ljd is not already in the netdev group
 sudo apt-get -y install wicd-curses
