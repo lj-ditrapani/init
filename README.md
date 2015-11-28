@@ -16,4 +16,4 @@ Additional steps
 TODO
 ----
 
-- install docker latest (1.7) or just ubuntu default (1.5)?
+- Move docker install to separate file?

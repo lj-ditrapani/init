@@ -18,7 +18,7 @@ sudo systemctl stop sshd.service
 sudo systemctl disable sshd.service
 sudo systemctl enable docker
 sudo systemctl restart docker.service
-mkdir -p ~/local/share
+mkdir -p ~/local
 mkdir -p ~/usb
 mkdir -p ~/media
 mkdir -p ~/fun

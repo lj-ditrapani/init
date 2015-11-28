@@ -81,7 +81,7 @@ sudo apt-get -y install \
     gedit \
     lxterminal \
 \
-    mplayer2 \
+    mpv \
     audacious \
     gstreamer1.0-libav \
     gstreamer1.0-plugins-bad \
