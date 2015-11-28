@@ -33,9 +33,9 @@ cd ~/dotfiles
 git remote set-url origin git@github.com:lj-ditrapani/dotfiles.git
 cd ~
 
-# Vim setup
-git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
-vim +PluginInstall +qall
-
 # This has a curses pop-up if ljd is not already in the netdev group
 sudo apt-get -y install wicd-curses
+
+# Vim setup (seems to kill the init.sh script, so do last)
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+vim +PluginInstall +qall

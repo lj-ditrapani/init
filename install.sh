@@ -21,7 +21,6 @@ sudo apt-get -y install \
 \
     nodejs \
 \
-    python3-doc \
     idle3 \
     python3-examples \
     python3-pil \
@@ -29,7 +28,6 @@ sudo apt-get -y install \
 \
     ruby-full \
     ri \
-    ruby2.1-doc \
 \
     curl \
     git \
