@@ -1,6 +1,6 @@
 sudo apt-get update
 sudo apt-get -y install git curl
-curl -L https://deb.nodesource.com/setup_0.12 | sudo /bin/bash -
+curl -L https://deb.nodesource.com/setup_4.x | sudo /bin/bash -
 
 # install packages
 curl https://raw.githubusercontent.com/lj-ditrapani/init/master/install.sh | sudo bash
