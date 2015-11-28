@@ -67,6 +67,7 @@ sudo apt-get -y install \
     dos2unix \
     sqlite3 \
     sqlite3-doc \
+    xa65 \
 \
     unrar \
     p7zip-full \
