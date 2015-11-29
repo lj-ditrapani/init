@@ -12,3 +12,7 @@ sudo apt-get -y install \
 #    fceux              nes
 #    visualboyadvance-gtk    # gba
 #    higan                   # snes
+
+# Copy over built-in ROMs for vice
+sudo cp ~/media/media/videoGames/emulation/c64/built-in-ROMs{basic,chargen,kernal} /usr/lib/vice/C64
+# Get vice sound working
