@@ -1,9 +1,17 @@
-sudo apt-get update
-sudo apt-get -y install git curl
-curl -L https://deb.nodesource.com/setup_4.x | sudo /bin/bash -
+# Add official docker repo
+sudo apt-key adv --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys 58118E89F3A912897C070ADBF76221572C52609D
+# BRITTLE:  Only works with Ubuntu 15.10; must update ubuntu-wily to correct version for later Ubuntu releases
+sudo sh -c "echo 'deb https://apt.dockerproject.org/repo ubuntu-wily main' >> /etc/apt/sources.list.d/docker.list"
+
+wget -O - https://deb.nodesource.com/setup_4.x | sudo /bin/bash -
 
 # install packages
-curl https://raw.githubusercontent.com/lj-ditrapani/init/master/install.sh | sudo bash
+wget -O - https://raw.githubusercontent.com/lj-ditrapani/init/master/install.sh | sudo bash
+
+# install docker-compose
+curl -L https://github.com/docker/compose/releases/download/1.5.2/docker-compose-`uname -s`-`uname -m` > ~/docker-compose
+sudo mv ~/docker-compose /usr/local/bin/docker-compose
+sudo chmod +x /usr/local/bin/docker-compose
 
 # setup user
 sudo chsh -s /usr/bin/zsh ljd
@@ -36,6 +44,10 @@ cd ~
 # This has a curses pop-up if ljd is not already in the netdev group
 sudo apt-get -y install wicd-curses
 
-# Vim setup (seems to kill the init.sh script, so do last)
+# Vim setup (seems to kill the init.sh script, so do it last)
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 vim +PluginInstall +qall
+
+# Had duplicate google sources in google.list & google-talkplugin.list
+# so delete one to suppress error
+# sudo rm /etc/apt/sources.list.d/google-talkplugin.list

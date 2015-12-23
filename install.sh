@@ -33,7 +33,8 @@ sudo apt-get -y install \
     git \
     silversearcher-ag \
     xsel \
-    docker.io \
+    linux-image-extra-$(uname -r) \
+    docker-engine \
     tmux \
     openssh-server \
 \
