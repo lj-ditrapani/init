@@ -21,3 +21,17 @@ TODO
 ----
 
 - Move docker install to separate file?
+
+Setting up wireless
+-------------------
+
+Add the following lines to /etc/network/interfaces
+
+    sudo vi /etc/network/interfaces
+    iface wlan0 inet dhcp
+    wpa-ssid <my_ssid>
+    wpa-psk <my_ssid_password>
+
+Then bring the interface up
+
+    sudo ifup -v wlan0
