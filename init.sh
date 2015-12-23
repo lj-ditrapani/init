@@ -18,7 +18,7 @@ sudo chsh -s /usr/bin/zsh ljd
 sudo usermod -a -G audio,video,netdev,docker ljd
 
 # dotfiles
-rm -rf ~/dotfiles
+sudo rm -rf ~/dotfiles
 git clone https://github.com/lj-ditrapani/dotfiles.git ~/dotfiles
 ~/dotfiles/link.rb
 
