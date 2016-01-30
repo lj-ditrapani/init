@@ -21,11 +21,6 @@ sudo apt-get -y install \
 \
     nodejs \
 \
-    idle3 \
-    python3-examples \
-    python3-pil \
-    python3-pil.imagetk \
-\
     ruby-full \
     ri \
 \
