@@ -30,7 +30,7 @@ mkdir -p ~/local
 mkdir -p ~/usb
 mkdir -p ~/media
 mkdir -p ~/fun
-sudo npm install -g coffee-script jslint jshint coffeelint gulp
+sudo npm install -g coffee-script eslint jslint jshint coffeelint jake mocha
 
 # git setup
 git config --global user.name "Lyall Jonathan Di Trapani"
