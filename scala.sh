@@ -8,3 +8,9 @@ sudo apt-get -y install openjdk-8-jdk
 curl http://downloads.typesafe.com/scala/${version}/${scala_tar} > ${scala_tar_path}
 tar -xvf $scala_tar_path -C $dir
 mv ${dir}/${scala_name} ${dir}/scala
+
+# Conscript
+curl https://raw.githubusercontent.com/n8han/conscript/master/setup.sh | sh
+
+# giter8
+cs n8han/giter8
