@@ -28,6 +28,8 @@ Setting up wireless
 Add the following lines to /etc/network/interfaces
 
     sudo vi /etc/network/interfaces
+    # to connect on boot up
+    auto wlan0
     iface wlan0 inet dhcp
     wpa-ssid <my_ssid>
     wpa-psk <my_ssid_password>
@@ -35,3 +37,16 @@ Add the following lines to /etc/network/interfaces
 Then bring the interface up
 
     sudo ifup -v wlan0
+
+or
+
+    sudo ip link set wlan0 up
+
+If blocked by rfkill
+
+    rfkill list all
+    sudo rfkill unblock all
+
+Scan without wicd-curses
+
+    sudo iwlist scan
