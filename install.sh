@@ -32,6 +32,7 @@ sudo apt-get -y install \
     docker-engine \
     tmux \
     openssh-server \
+    pass \
 \
     flashplugin-installer \
     vlc \
