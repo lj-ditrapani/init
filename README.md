@@ -12,6 +12,7 @@ Additional steps
 
 - Un-mute and set alsamixer volume
 - Log out and log back in for group assignments & user settings to take effect
+- Manually add core gnupg key
 - Manually add ssh keys to .ssh
 - Manually add passwords
 - Log into firefox sync
