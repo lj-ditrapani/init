@@ -50,3 +50,14 @@ If blocked by rfkill
 Scan without wicd-curses
 
     sudo iwlist scan
+
+
+pass
+----
+
+    sudo update-alternatives --config editor
+    pick vim
+
+    # generate random bytes
+    sudo apt-get install rng-tools
+    sudo rngd -r /dev/urandom
