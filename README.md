@@ -54,7 +54,7 @@ Scan without wicd-curses
 
 To restart networking
 
-sudo service networking restart
+    sudo service networking restart
 
 pass
 ----
