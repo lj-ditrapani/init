@@ -52,6 +52,9 @@ Scan without wicd-curses
 
     sudo iwlist scan
 
+To restart networking
+
+sudo service networking restart
 
 pass
 ----
