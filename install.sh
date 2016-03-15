@@ -7,11 +7,10 @@ sudo apt-get -y install \
     zsh-doc \
     zsh-lovers \
     vim-doc \
-    vim-nox \
+    vim-gtk \
     alsa-utils \
 \
     xorg \
-    xterm \
     i3 \
     synaptic \
     firefox \
