@@ -11,6 +11,8 @@ sudo apt-get -y install \
     alsa-utils \
 \
     xorg \
+    rxvt-unicode-256color \
+    ncurses-term \
     i3 \
     synaptic \
     firefox \
@@ -74,7 +76,6 @@ sudo apt-get -y install \
     mtpfs \
 \
     gedit \
-    lxterminal \
 \
     mpv \
     audacious \
