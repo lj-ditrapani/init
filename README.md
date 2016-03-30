@@ -13,8 +13,14 @@ Additional steps
 - Un-mute and set alsamixer volume
 - Log out and log back in for group assignments & user settings to take effect
 - Manually add core gnupg key
+    - gpg --allow-secret-key-import --import main-sec.asc
+    - gpg --edit-key main
+    - trust
+    - 5
+    - quit
 - Manually add ssh keys to .ssh
 - Manually add passwords
+    - git clone url .password-store
 - Log into firefox sync
 
 
@@ -60,7 +66,7 @@ pass
 ----
 
     sudo update-alternatives --config editor
-    pick vim
+    pick vim.gtk
 
     # generate random bytes
     sudo apt-get install rng-tools
