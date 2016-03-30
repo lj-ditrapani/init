@@ -41,6 +41,9 @@ cd ~/dotfiles
 git remote set-url origin git@github.com:lj-ditrapani/dotfiles.git
 cd ~
 
+# Map caps lock to escape
+sudo sed -i 's/XKBOPTIONS=".*"/XKBOPTIONS="caps:escape"/' /etc/default/keyboard
+
 # This has a curses pop-up if ljd is not already in the netdev group
 sudo apt-get -y install wicd-curses
 
