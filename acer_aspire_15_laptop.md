@@ -1,3 +1,8 @@
+F2 on boot to enter bios
+- Set boot to Legacy (instead of UFIE)
+- Enable F2 boot menue
+- save and exit
+
 F12 set boot order
 
 If audio won't play because it is using HDMI and default sound card instead of PCH:
