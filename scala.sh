@@ -4,7 +4,7 @@ scala_tar=${scala_name}.tgz
 dir=~/local
 scala_tar_path=${dir}/${scala_tar}
 
-sudo apt-get -y install openjdk-8-jdk
+sudo apt-get -y install openjdk-8-jdk openjfx
 curl http://downloads.lightbend.com/scala/${version}/${scala_tar} > ${scala_tar_path}
 tar -xvf $scala_tar_path -C $dir
 mv ${dir}/${scala_name} ${dir}/scala
