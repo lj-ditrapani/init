@@ -1,7 +1,7 @@
 # Add official docker repo
 sudo apt-key adv --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys 58118E89F3A912897C070ADBF76221572C52609D
-# BRITTLE:  Only works with Ubuntu 15.10; must update ubuntu-wily to correct version for later Ubuntu releases
-sudo sh -c "echo 'deb https://apt.dockerproject.org/repo ubuntu-wily main' >> /etc/apt/sources.list.d/docker.list"
+# BRITTLE:  Only works with Ubuntu 16.04; must update ubuntu-xenial to correct version for later Ubuntu releases
+sudo sh -c "echo 'deb https://apt.dockerproject.org/repo ubuntu-xenial main' >> /etc/apt/sources.list.d/docker.list"
 
 wget -O - https://deb.nodesource.com/setup_4.x | sudo /bin/bash -
 
@@ -9,7 +9,7 @@ wget -O - https://deb.nodesource.com/setup_4.x | sudo /bin/bash -
 wget -O - https://raw.githubusercontent.com/lj-ditrapani/init/master/install.sh | sudo bash
 
 # install docker-compose
-curl -L https://github.com/docker/compose/releases/download/1.5.2/docker-compose-`uname -s`-`uname -m` > ~/docker-compose
+curl -L https://github.com/docker/compose/releases/download/1.7.1/docker-compose-`uname -s`-`uname -m` > ~/docker-compose
 sudo mv ~/docker-compose /usr/local/bin/docker-compose
 sudo chmod +x /usr/local/bin/docker-compose
 
@@ -30,6 +30,7 @@ mkdir -p ~/local
 mkdir -p ~/usb
 mkdir -p ~/media
 mkdir -p ~/fun
+mkdir -p ~/Downloads
 sudo npm install -g coffee-script eslint jslint jshint coffeelint jake mocha
 
 # git setup
@@ -50,7 +51,3 @@ sudo apt-get -y install wicd-curses
 # Vim setup (seems to kill the init.sh script, so do it last)
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 vim +PluginInstall +qall
-
-# Had duplicate google sources in google.list & google-talkplugin.list
-# so delete one to suppress error
-# sudo rm /etc/apt/sources.list.d/google-talkplugin.list
