@@ -5,7 +5,10 @@ Updated for Ubuntu 15.10.
 
 Installs my favorite packages and configures everything the way I like it.
 
-    wget -O - https://raw.githubusercontent.com/lj-ditrapani/init/master/init.sh | bash
+    wget -O - https://goo.gl/iy4GXV | bash
+
+<https://goo.gl/iy4GXV> redirects to
+<https://raw.githubusercontent.com/lj-ditrapani/init/master/init.sh>
 
 
 Additional steps
