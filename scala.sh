@@ -9,7 +9,8 @@ tar -xvf $scala_tar_path -C $dir
 mv ${dir}/${scala_name} ${dir}/scala
 
 # Conscript
-curl https://raw.githubusercontent.com/n8han/conscript/master/setup.sh | sh
+curl https://raw.githubusercontent.com/foundweekends/conscript/master/setup.sh | sh
 
 # giter8
-cs n8han/giter8
+cs foundweekends/giter8
+g8
