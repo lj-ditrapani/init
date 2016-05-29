@@ -3,10 +3,11 @@ sudo apt-key adv --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys 58
 # BRITTLE:  Only works with Ubuntu 16.04; must update ubuntu-xenial to correct version for later Ubuntu releases
 sudo sh -c "echo 'deb https://apt.dockerproject.org/repo ubuntu-xenial main' >> /etc/apt/sources.list.d/docker.list"
 
-wget -O - https://deb.nodesource.com/setup_4.x | sudo /bin/bash -
-
 echo "deb https://dl.bintray.com/sbt/debian /" | sudo tee -a /etc/apt/sources.list.d/sbt.list
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 642AC823
+
+# Does apt-get update
+wget -O - https://deb.nodesource.com/setup_4.x | sudo /bin/bash -
 
 # install packages
 wget -O - https://raw.githubusercontent.com/lj-ditrapani/init/master/install.sh | sudo bash
