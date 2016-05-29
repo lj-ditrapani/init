@@ -5,6 +5,9 @@ sudo sh -c "echo 'deb https://apt.dockerproject.org/repo ubuntu-xenial main' >> 
 
 wget -O - https://deb.nodesource.com/setup_4.x | sudo /bin/bash -
 
+echo "deb https://dl.bintray.com/sbt/debian /" | sudo tee -a /etc/apt/sources.list.d/sbt.list
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 642AC823
+
 # install packages
 wget -O - https://raw.githubusercontent.com/lj-ditrapani/init/master/install.sh | sudo bash
 
