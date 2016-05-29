@@ -39,18 +39,6 @@ sudo apt-get -y install \
     vlc \
     transmission-gtk \
 \
-    gawk \
-    libssl-dev \
-    libyaml-dev \
-    libsqlite3-dev \
-    autoconf \
-    libgdbm-dev \
-    libncurses5-dev \
-    automake \
-    libtool \
-    bison \
-    pkg-config \
-\
     gtypist \
     inkscape \
     mesa-utils \
