@@ -1,7 +1,7 @@
 LJD Ubuntu Init Script
 ===============================================================================
 
-Updated for Ubuntu 15.10.
+Updated for Ubuntu 16.04.
 
 Installs my favorite packages and configures everything the way I like it.
 
@@ -26,11 +26,6 @@ Additional steps
     - git clone url .password-store
 - Log into firefox sync
 
-
-TODO
-----
-
-- Move docker install to separate file?
 
 Setting up wireless
 -------------------
