@@ -9,7 +9,7 @@ wget -O - https://raw.githubusercontent.com/lj-ditrapani/init/master/install.sh 
 
 # setup user
 sudo chsh -s /usr/bin/zsh ljd
-sudo usermod -a -G audio,video,netdev,docker ljd
+sudo usermod -a -G audio,video,netdev ljd
 
 # dotfiles
 sudo rm -rf ~/dotfiles

@@ -30,7 +30,6 @@ sudo apt-get -y install \
     silversearcher-ag \
     xsel \
     linux-image-extra-$(uname -r) \
-    docker-engine \
     tmux \
     openssh-server \
     pass \
