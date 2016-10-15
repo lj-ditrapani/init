@@ -5,6 +5,11 @@ F2 on boot to enter bios
 
 F12 set boot order
 
+To stop external monitor for disconnecting when laptop sleeps when lid is shut
+sudo vim /etc/systemd/logind.conf
+Add a line HandleLidSwitch=ignore (make sure it's not commented out!)
+sudo systemctl restart systemd-logind.service
+
 If audio won't play because it is using HDMI and default sound card instead of PCH:
 
 sudo vim /etc/asound.conf
