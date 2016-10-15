@@ -27,8 +27,8 @@ Additional steps
 - Log into firefox sync
 
 
-Setting up wireless
--------------------
+Setting up wireless without wicd
+--------------------------------
 
 Add the following lines to /etc/network/interfaces
 
@@ -60,6 +60,7 @@ To restart networking
 
     sudo service networking restart
 
+
 pass
 ----
 
@@ -69,3 +70,11 @@ pass
     # generate random bytes
     sudo apt-get install rng-tools
     sudo rngd -r /dev/urandom
+
+
+If hanging during boot due to "waiting for network configuration"
+-----------------------------------------------------------------
+
+    sudo vim /etc/network/interfaces
+
+Comment out all interfaces but lo
