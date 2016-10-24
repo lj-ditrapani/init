@@ -19,6 +19,7 @@ sudo apt-get -y install \
     evince \
     xchm \
     build-essential \
+    mosh \
 \
     nodejs \
 \
