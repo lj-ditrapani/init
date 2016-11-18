@@ -2,7 +2,7 @@ echo "deb https://dl.bintray.com/sbt/debian /" | sudo tee -a /etc/apt/sources.li
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 642AC823
 
 # Does apt-get update
-wget -O - https://deb.nodesource.com/setup_4.x | sudo /bin/bash -
+wget -O - https://deb.nodesource.com/setup_6.x | sudo /bin/bash -
 
 # install packages
 wget -O - https://raw.githubusercontent.com/lj-ditrapani/init/master/install.sh | sudo bash
