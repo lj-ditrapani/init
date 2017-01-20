@@ -23,6 +23,7 @@ mkdir -p ~/usb
 mkdir -p ~/media
 mkdir -p ~/fun
 mkdir -p ~/Downloads
+mkdir -p ~/tmp
 sudo npm install -g coffee-script eslint jslint jshint coffeelint jake mocha
 
 # git setup
