@@ -24,7 +24,8 @@ Additional steps
 - Manually add ssh keys to .ssh
 - Manually add passwords
     - git clone url .password-store
-- Log into firefox sync
+- Log into firefox sync in firefox
+- Log into google account in google chrome
 
 
 Setting up wireless without wicd
