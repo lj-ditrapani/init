@@ -16,6 +16,7 @@ sudo apt-get -y install \
     i3 \
     synaptic \
     firefox \
+    google-chrome-stable \
     evince \
     xchm \
     build-essential \
