@@ -1,6 +1,8 @@
-echo "deb https://dl.bintray.com/sbt/debian /" | sudo tee -a /etc/apt/sources.list.d/sbt.list
+echo "deb https://dl.bintray.com/sbt/debian /" | \
+    sudo tee -a /etc/apt/sources.list.d/sbt.list
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 642AC823
-sudo sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google.list'
+echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" | \
+    sudo tee -a /etc/apt/sources.list.d/google.list
 wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
 
 # Does apt-get update
