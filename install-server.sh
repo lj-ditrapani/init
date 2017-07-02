@@ -23,5 +23,5 @@ sudo apt-get install \
     tmux \
     openssh-server \
 \
-    openjdk-8-jdk \
+    openjdk-8-jdk-headless \
     sbt \
