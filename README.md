@@ -4,6 +4,8 @@ LJD Ubuntu Init Script
 Updated for Ubuntu 16.04.
 
 Installs my favorite packages and configures everything the way I like it.
+This is for a graphical workstation.
+See the [README-server.md](README-server.md) for a server version.
 
     wget -O - https://goo.gl/iy4GXV | bash
 
