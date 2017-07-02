@@ -5,7 +5,7 @@ sudo apt-get -y install \
     fceux \
     visualboyadvance-gtk \
     higan \
-#    mednafen           snes, playstation, gba
+#    mednafen           snes, playstation, gba, genesis, sms, nes
 #    stella             atari 2600
 #    mess               atari 2600, commodore 64
 #    vice               commodore 64
