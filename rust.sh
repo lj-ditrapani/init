@@ -1,2 +1,2 @@
 # Install (or upgrade) rustc
-curl -f -L https://static.rust-lang.org/rustup.sh | sh
+curl -L https://sh.rustup.rs | sh
