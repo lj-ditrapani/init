@@ -30,9 +30,10 @@ sudo systemctl restart docker.service
 
 # To setup ubuntu to test with:
 docker pull ubuntu:16.04
-docker run ubuntu:16.04 /bin/bash
-apt-get update
-apt-get install wget sudo apt-transport-https
+docker build -t init_ubuntu .
+docker run -it init_ubuntu /bin/bash
+
 adduser ljd
 usermod -aG sudo ljd
 su ljd
+cd
