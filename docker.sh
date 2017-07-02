@@ -29,6 +29,7 @@ sudo systemctl restart docker.service
 # Now log out!
 
 # To setup ubuntu to test with:
+tmux
 docker pull ubuntu:16.04
 docker build -t init_ubuntu - < Dockerfile
 docker run -it init_ubuntu /bin/bash
