@@ -1,9 +1,13 @@
+# sbt
 echo "deb https://dl.bintray.com/sbt/debian /" | \
     sudo tee -a /etc/apt/sources.list.d/sbt.list
-sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 642AC823
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 \
+    --recv 2EE0EA64E40A89B84B2DF73499E82A75642AC823
+
+# google chrome
+wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
 echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" | \
     sudo tee -a /etc/apt/sources.list.d/google.list
-wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
 
 # Does apt-get update
 wget -O - https://deb.nodesource.com/setup_6.x | sudo /bin/bash -
