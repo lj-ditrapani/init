@@ -9,7 +9,6 @@ sudo apt-get -y install \
     vim-doc \
     vim-nox \
 \
-    rxvt-unicode-256color \
     ncurses-term \
     build-essential \
     mosh \
@@ -19,7 +18,6 @@ sudo apt-get -y install \
     curl \
     git \
     silversearcher-ag \
-    linux-image-extra-$(uname -r) \
     tmux \
     openssh-server \
 \
