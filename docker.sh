@@ -30,7 +30,7 @@ sudo systemctl restart docker.service
 
 # To setup ubuntu to test with:
 docker pull ubuntu:16.04
-docker build -t init_ubuntu .
+docker build -t init_ubuntu - < Dockerfile
 docker run -it init_ubuntu /bin/bash
 
 adduser ljd
