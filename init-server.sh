@@ -37,6 +37,8 @@ cd ~
 # Seems to fail when run from install-server.sh
 sudo apt-get -y install sbt
 
+sudo rm -fr /var/lib/tomcat8/webapps/ROOT
+
 # setup website
 sudo rm -rf ~/fun/ditrapani.info
 git clone https://github.com/lj-ditrapani/ditrapani.info.git ~/fun/ditrapani.info
