@@ -37,7 +37,10 @@ cd ~
 # Seems to fail when run from install-server.sh
 sudo apt-get -y install sbt
 
-sudo rm -fr /var/lib/tomcat8/webapps/ROOT
+# Setup tomcat
+echo "info.ditrapani.environment=production" | \
+    sudo tee -a /var/lib/tomcat8/conf/catalina.properties
+sudo systemctl restart tomcat8.service
 
 # setup website
 sudo rm -rf ~/fun/ditrapani.info
