@@ -34,6 +34,15 @@ cd ~/dotfiles
 git remote set-url origin git@github.com:lj-ditrapani/dotfiles.git
 cd ~
 
+# Seems to fail when run from install-server.sh
+sudo apt-get -y install sbt
+
+# setup website
+sudo rm -rf ~/fun/ditrapani.info
+git clone https://github.com/lj-ditrapani/ditrapani.info.git ~/fun/ditrapani.info
+cd ~/fun/ditrapani.info
+sbt package
+
 # Vim setup (seems to kill the init.sh script, so do it last)
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 vim +PluginInstall +qall

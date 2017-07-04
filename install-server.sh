@@ -22,4 +22,4 @@ sudo apt-get -y install \
     openssh-server \
 \
     openjdk-8-jdk-headless \
-    sbt \
+    tomcat8 \
