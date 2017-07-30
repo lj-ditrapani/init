@@ -1,4 +1,4 @@
-# openvpn --config server.openvpn
+# sudo openvpn --config server.openvpn
 sudo ufw default deny incoming
 sudo ufw default reject outgoing
 sudo ufw allow out 53/udp
