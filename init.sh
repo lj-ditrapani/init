@@ -23,6 +23,9 @@ sudo usermod -a -G audio,video,netdev ljd
 sudo rm -rf ~/dotfiles
 git clone https://github.com/lj-ditrapani/dotfiles.git ~/dotfiles
 ~/dotfiles/link.rb
+cd ~/dotfiles
+git remote set-url origin git@github.com:lj-ditrapani/dotfiles.git
+cd ~
 
 sudo systemctl stop sshd.service
 sudo systemctl disable sshd.service
@@ -33,15 +36,6 @@ mkdir -p ~/fun
 mkdir -p ~/Downloads
 mkdir -p ~/tmp
 sudo npm install -g coffee-script
-
-# git setup
-git config --global user.name "Lyall Jonathan Di Trapani"
-git config --global user.email lj.ditrapani@gmail.com
-git config --global core.editor vim
-git config --global push.default simple
-cd ~/dotfiles
-git remote set-url origin git@github.com:lj-ditrapani/dotfiles.git
-cd ~
 
 # Map caps lock to escape
 sudo sed -i 's/XKBOPTIONS=".*"/XKBOPTIONS="caps:escape"/' /etc/default/keyboard
