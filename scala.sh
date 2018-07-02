@@ -1,4 +1,4 @@
-version=2.12.2
+version=2.12.6
 scala_name=scala-${version}
 scala_tar=${scala_name}.tgz
 dir=~/local
