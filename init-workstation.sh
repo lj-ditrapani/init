@@ -1,3 +1,9 @@
+# So we can setup ppas
+sudo apt-get install \
+    gpg-agent \
+    software-properties-common \
+    python-software-properties
+
 # sbt
 echo "deb https://dl.bintray.com/sbt/debian /" | \
     sudo tee -a /etc/apt/sources.list.d/sbt.list

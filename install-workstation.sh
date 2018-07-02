@@ -5,7 +5,6 @@ sudo apt-get -y install \
     software-properties-common \
     zsh \
     zsh-doc \
-    zsh-lovers \
     vim-doc \
     vim-gtk \
     alsa-utils \
