@@ -5,7 +5,6 @@ sudo apt-get -y install \
     software-properties-common \
     zsh \
     zsh-doc \
-    zsh-lovers \
     vim-doc \
     vim-nox \
 \
@@ -21,5 +20,5 @@ sudo apt-get -y install \
     tmux \
     openssh-server \
 \
-    openjdk-8-jdk-headless \
+    default-jdk-headless \
     tomcat8 \

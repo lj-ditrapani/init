@@ -4,10 +4,9 @@ echo "deb https://dl.bintray.com/sbt/debian /" | \
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 \
     --recv 2EE0EA64E40A89B84B2DF73499E82A75642AC823
 
-# Does apt-get update
-wget -O - https://deb.nodesource.com/setup_6.x | sudo /bin/bash -
-
 # install packages
+sudo apt-get update
+sudo apt-get -y upgrade
 wget -O - https://raw.githubusercontent.com/lj-ditrapani/init/master/install-server.sh | sudo bash
 
 # setup user
@@ -18,21 +17,15 @@ sudo usermod -a -G netdev ljd
 sudo rm -rf ~/dotfiles
 git clone https://github.com/lj-ditrapani/dotfiles.git ~/dotfiles
 ~/dotfiles/link.rb
+cd ~/dotfiles
+git remote set-url origin git@github.com:lj-ditrapani/dotfiles.git
+cd ~
 
 mkdir -p ~/local
 mkdir -p ~/fun
 mkdir -p ~/Downloads
 mkdir -p ~/tmp
 sudo npm install -g coffee-script
-
-# git setup
-git config --global user.name "Lyall Jonathan Di Trapani"
-git config --global user.email lj.ditrapani@gmail.com
-git config --global core.editor vim
-git config --global push.default simple
-cd ~/dotfiles
-git remote set-url origin git@github.com:lj-ditrapani/dotfiles.git
-cd ~
 
 # Seems to fail when run from install-server.sh
 sudo apt-get -y install sbt
