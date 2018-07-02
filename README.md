@@ -1,13 +1,10 @@
 LJD Ubuntu Init Script
 ===============================================================================
 
-Updated for Ubuntu 18.04 server.
-
 Installs my favorite packages and configures everything the way I like it.
 This is for a graphical workstation.
-See the [README-server.md](README-server.md) for a server version.
-Download and install Ubuntu 18.04 server
-(this is no longer based on the mini iso).
+See the [README-server.md](README-server.md) for a non-graphical server version.
+Download and install Ubuntu 18.04 server.
 Then run:
 
     wget -O - https://goo.gl/PG2Ht7 | bash
@@ -18,8 +15,10 @@ Then run:
 
 Additional steps
 
-- Un-mute and set alsamixer volume
+- Either reboot or run `sudo dpkg-reconfigure keyboard-configuration`
+  and then reboot to get keyboard layout working
 - Log out and log back in for group assignments & user settings to take effect
+- Un-mute and set alsamixer volume
 - Manually add core gnupg key
     - gpg --allow-secret-key-import --import main-sec.asc
     - gpg --edit-key main
@@ -31,40 +30,6 @@ Additional steps
     - git clone url .password-store
 - Log into firefox sync in firefox
 - Log into google account in google chrome
-
-
-Setting up wireless without wicd
---------------------------------
-
-Add the following lines to /etc/network/interfaces
-
-    sudo vi /etc/network/interfaces
-    # to connect on boot up
-    auto wlan0
-    iface wlan0 inet dhcp
-    wpa-ssid <my_ssid>
-    wpa-psk <my_ssid_password>
-
-Then bring the interface up
-
-    sudo ifup -v wlan0
-
-or
-
-    sudo ip link set wlan0 up
-
-If blocked by rfkill
-
-    rfkill list all
-    sudo rfkill unblock all
-
-Scan without wicd-curses
-
-    sudo iwlist scan
-
-To restart networking
-
-    sudo service networking restart
 
 
 pass
