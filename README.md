@@ -9,15 +9,13 @@ See the [README-server.md](README-server.md) for a non-graphical server version.
 2.  Backup gpg key/ssh key/pass repo
 3.  Download and install Ubuntu 18.04 server.
 4.  Then run:
-
+    ```
     wget -O - https://goo.gl/PG2Ht7 | bash
-
-<https://goo.gl/PG2Ht7> redirects to
-<https://raw.githubusercontent.com/lj-ditrapani/init/master/init-workstation.sh>
-
-
+    ```
+    <https://goo.gl/PG2Ht7> redirects to
+    <https://raw.githubusercontent.com/lj-ditrapani/init/master/init-workstation.sh>
 5. Either reboot or run `sudo dpkg-reconfigure keyboard-configuration`
-  and then reboot to get keyboard layout working
+   and then reboot to get keyboard layout working
 6. Log out and log back in for group assignments & user settings to take effect
 7. Un-mute and set alsamixer volume
 8. Manually add core gnupg key
