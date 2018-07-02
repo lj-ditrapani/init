@@ -1,5 +1,5 @@
 # So we can setup ppas
-sudo apt-get install \
+sudo apt-get -y install \
     gpg-agent \
     software-properties-common \
     python-software-properties

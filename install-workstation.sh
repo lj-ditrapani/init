@@ -30,7 +30,6 @@ sudo apt-get -y install \
     git \
     silversearcher-ag \
     xsel \
-    linux-image-extra-$(uname -r) \
     tmux \
     openssh-server \
     pass \
@@ -49,7 +48,6 @@ sudo apt-get -y install \
 \
     bvi \
     tidy \
-    tidy-doc \
     dos2unix \
     sqlite3 \
     sqlite3-doc \
@@ -61,7 +59,6 @@ sudo apt-get -y install \
 \
     android-tools-adb \
     android-tools-fastboot \
-    mtpfs \
 \
     gedit \
 \
