@@ -15,9 +15,15 @@ sudo apt-get update
 sudo apt-get -y upgrade
 wget -O - https://raw.githubusercontent.com/lj-ditrapani/init/master/install-workstation.sh | sudo bash
 
+# Because google chrome deb will create its own file
+sudo rm -f /etc/apt/sources.list.d/google.list
+
 # setup user
 sudo chsh -s /usr/bin/zsh ljd
 sudo usermod -a -G audio,video,netdev ljd
+
+sudo systemctl stop ssh.service
+sudo systemctl disable ssh.service
 
 # dotfiles
 sudo rm -rf ~/dotfiles
@@ -27,8 +33,9 @@ cd ~/dotfiles
 git remote set-url origin git@github.com:lj-ditrapani/dotfiles.git
 cd ~
 
-sudo systemctl stop sshd.service
-sudo systemctl disable sshd.service
+# Map caps lock to escape
+sudo sed -i 's/XKBOPTIONS=".*"/XKBOPTIONS="caps:escape"/' /etc/default/keyboard
+
 mkdir -p ~/local
 mkdir -p ~/usb
 mkdir -p ~/media
@@ -36,9 +43,6 @@ mkdir -p ~/fun
 mkdir -p ~/Downloads
 mkdir -p ~/tmp
 sudo npm install -g coffee-script
-
-# Map caps lock to escape
-sudo sed -i 's/XKBOPTIONS=".*"/XKBOPTIONS="caps:escape"/' /etc/default/keyboard
 
 # This has a curses pop-up if ljd is not already in the netdev group
 sudo apt-get -y install wicd-curses

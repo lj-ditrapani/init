@@ -22,6 +22,7 @@ sudo apt-get -y install \
     mosh \
 \
     nodejs \
+    npm \
 \
     ruby-full \
     ri \
