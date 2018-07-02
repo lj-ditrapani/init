@@ -7,7 +7,7 @@ Installs my favorite packages and configures everything the way I like it.
 This is for a graphical workstation.
 See the [README-server.md](README-server.md) for a server version.
 
-    wget -O - https://goo.gl/iy4GXV | bash
+    wget -O - https://goo.gl/PG2Ht7 | bash
 
 <https://goo.gl/PG2Ht7> redirects to
 <https://raw.githubusercontent.com/lj-ditrapani/init/master/init-workstation.sh>
