@@ -1,7 +1,7 @@
 LJD Ubuntu Init Script
 ===============================================================================
 
-Updated for Ubuntu 16.04.
+Updated for Ubuntu 18.04.
 
 Installs my favorite packages and configures everything the way I like it.
 This is for a graphical workstation.

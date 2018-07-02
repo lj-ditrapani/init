@@ -13,6 +13,7 @@ echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" | \
 sudo add-apt-repository ppa:linuxuprising/java
 
 # install packages
+sudo apt-get update
 wget -O - https://raw.githubusercontent.com/lj-ditrapani/init/master/install.sh | sudo bash
 
 # setup user
