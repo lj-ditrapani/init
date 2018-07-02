@@ -1,8 +1,5 @@
 # So we can setup ppas
-sudo apt-get -y install \
-    gpg-agent \
-    software-properties-common \
-    python-software-properties
+sudo apt-get -y install gpg-agent software-properties-common
 
 # sbt
 echo "deb https://dl.bintray.com/sbt/debian /" | \
