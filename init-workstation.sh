@@ -1,6 +1,3 @@
-# So we can setup ppas
-sudo apt-get -y install gpg-agent software-properties-common
-
 # sbt
 echo "deb https://dl.bintray.com/sbt/debian /" | \
     sudo tee -a /etc/apt/sources.list.d/sbt.list
@@ -8,15 +5,14 @@ sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 \
     --recv 2EE0EA64E40A89B84B2DF73499E82A75642AC823
 
 # google chrome
-wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
+wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | \
+    sudo apt-key add -
 echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" | \
     sudo tee -a /etc/apt/sources.list.d/google.list
 
-# Oracle Java jdk 10
-sudo add-apt-repository ppa:linuxuprising/java
-
 # install packages
 sudo apt-get update
+sudo apt-get -y upgrade
 wget -O - https://raw.githubusercontent.com/lj-ditrapani/init/master/install-workstation.sh | sudo bash
 
 # setup user
@@ -43,10 +39,6 @@ sudo npm install -g coffee-script
 
 # Map caps lock to escape
 sudo sed -i 's/XKBOPTIONS=".*"/XKBOPTIONS="caps:escape"/' /etc/default/keyboard
-
-# Requires user license agreement
-sudo apt-get -y install oracle-java10-installer
-sudo apt-get -y install sbt
 
 # This has a curses pop-up if ljd is not already in the netdev group
 sudo apt-get -y install wicd-curses

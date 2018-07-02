@@ -68,3 +68,5 @@ sudo apt-get -y install \
     gstreamer1.0-plugins-bad \
     gstreamer1.0-plugins-ugly \
 \
+    default-jdk \
+    sbt \
