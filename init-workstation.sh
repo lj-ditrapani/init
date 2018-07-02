@@ -14,7 +14,7 @@ sudo add-apt-repository ppa:linuxuprising/java
 
 # install packages
 sudo apt-get update
-wget -O - https://raw.githubusercontent.com/lj-ditrapani/init/master/install.sh | sudo bash
+wget -O - https://raw.githubusercontent.com/lj-ditrapani/init/master/install-workstation.sh | sudo bash
 
 # setup user
 sudo chsh -s /usr/bin/zsh ljd
