@@ -9,8 +9,8 @@ See the [README-server.md](README-server.md) for a server version.
 
     wget -O - https://goo.gl/iy4GXV | bash
 
-<https://goo.gl/iy4GXV> redirects to
-<https://raw.githubusercontent.com/lj-ditrapani/init/master/init.sh>
+<https://goo.gl/PG2Ht7> redirects to
+<https://raw.githubusercontent.com/lj-ditrapani/init/master/init-workstation.sh>
 
 
 Additional steps
