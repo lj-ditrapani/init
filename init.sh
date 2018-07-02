@@ -9,8 +9,8 @@ wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-ke
 echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" | \
     sudo tee -a /etc/apt/sources.list.d/google.list
 
-# Does apt-get update
-wget -O - https://deb.nodesource.com/setup_6.x | sudo /bin/bash -
+# Oracle Java jdk 10
+sudo add-apt-repository ppa:linuxuprising/java
 
 # install packages
 wget -O - https://raw.githubusercontent.com/lj-ditrapani/init/master/install.sh | sudo bash
@@ -39,6 +39,10 @@ sudo npm install -g coffee-script
 
 # Map caps lock to escape
 sudo sed -i 's/XKBOPTIONS=".*"/XKBOPTIONS="caps:escape"/' /etc/default/keyboard
+
+# Requires user license agreement
+sudo apt-get -y install oracle-java10-installer
+sudo apt-get -y install sbt
 
 # This has a curses pop-up if ljd is not already in the netdev group
 sudo apt-get -y install wicd-curses
