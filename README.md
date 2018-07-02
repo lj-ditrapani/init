@@ -5,6 +5,10 @@ Installs my favorite packages and configures everything the way I like it.
 This is for a graphical workstation.
 See the [README-server.md](README-server.md) for a non-graphical server version.
 
+
+Steps
+-----
+
 1.  Backup data you want to keep
 2.  Backup gpg key/ssh key/pass repo
 3.  Download and install Ubuntu 18.04 server.
