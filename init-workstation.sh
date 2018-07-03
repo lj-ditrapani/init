@@ -13,6 +13,7 @@ echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" | \
 # install packages
 sudo apt-get update
 sudo apt-get -y upgrade
+sudo sed -i '/cdrom/d' /etc/apt/sources.list
 wget -O - https://raw.githubusercontent.com/lj-ditrapani/init/master/install-workstation.sh | sudo bash
 
 # Because google chrome deb will create its own file
@@ -47,6 +48,10 @@ sudo npm install -g coffee-script
 # This has a curses pop-up if ljd is not already in the netdev group
 sudo apt-get -y install wicd-curses
 
+# Redirect to /dev/null 2 minute "waiting for network to be configured" on startup
+sudo systemctl mask systemd-networkd-wait-online.service
+
 # Vim setup (seems to kill the init.sh script, so do it last)
+rm -fr ~/.vim/bundle/Vundle.vim
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 vim +PluginInstall +qall
