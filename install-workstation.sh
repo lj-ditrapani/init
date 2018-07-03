@@ -71,3 +71,6 @@ sudo apt-get -y install \
 \
     default-jdk \
     sbt \
+\
+    pulseaudio \
+    pavucontrol \
