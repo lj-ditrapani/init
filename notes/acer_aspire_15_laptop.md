@@ -1,9 +1,9 @@
+F12 boot menu
+
 F2 on boot to enter bios
 - Set boot to Legacy (instead of UFIE)
-- Enable F2 boot menue
+- Enable F12 boot menu
 - save and exit
-
-F12 set boot order
 
 
 Don't sleep when lid shuts
