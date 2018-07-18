@@ -19,6 +19,7 @@ sudo apt-get -y install \
     silversearcher-ag \
     tmux \
     openssh-server \
+    pwgen \
 \
     default-jdk-headless \
     tomcat8 \

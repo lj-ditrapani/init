@@ -33,6 +33,7 @@ sudo apt-get -y install \
     xsel \
     tmux \
     openssh-server \
+    pwgen \
     pass \
 \
     vlc \
