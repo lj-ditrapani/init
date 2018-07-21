@@ -1,5 +1,5 @@
 # Download steam_latest.deb from steam website
-curl media.steampowered.com/client/installer/steam.deb > ~/steam.db
+curl http://repo.steampowered.com/steam/archive/precise/steam_latest.deb > ~/steam.deb
 sudo apt-get install python-apt xterm
 
 sudo dpkg -i steam.deb
