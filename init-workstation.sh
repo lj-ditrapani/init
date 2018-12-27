@@ -1,9 +1,3 @@
-# sbt
-echo "deb https://dl.bintray.com/sbt/debian /" | \
-    sudo tee -a /etc/apt/sources.list.d/sbt.list
-sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 \
-    --recv 2EE0EA64E40A89B84B2DF73499E82A75642AC823
-
 # google chrome
 wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | \
     sudo apt-key add -
@@ -44,6 +38,8 @@ mkdir -p ~/fun
 mkdir -p ~/Downloads
 mkdir -p ~/tmp
 sudo npm install -g coffee-script
+
+curl -s "https://get.sdkman.io" | bash
 
 # This has a curses pop-up if ljd is not already in the netdev group
 sudo apt-get -y install wicd-curses
