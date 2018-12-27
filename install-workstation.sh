@@ -70,9 +70,5 @@ sudo apt-get -y install \
     gstreamer1.0-plugins-bad \
     gstreamer1.0-plugins-ugly \
 \
-    openjdk-8-jdk \
-    default-jdk \
-    sbt \
-\
     pulseaudio \
     pavucontrol \
