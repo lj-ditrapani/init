@@ -13,6 +13,7 @@ Steps
 - Backup gpg key/ssh key/pass repo
 - Hard-wire machine to network
 - Download and install Ubuntu 18.04 server
+    - `sudo dd bs=4M if=ubuntu-18.04-server-amd64.iso of=/dev/sd<?> conv=fdatasync status=progress`
     - Select openssh-server only
 - Then run:
     ```
