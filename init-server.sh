@@ -1,6 +1,11 @@
 # node 10
 curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
 
+export DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true
+echo 'tzdata tzdata/Areas select America' >> ~/preseed.txt
+echo 'tzdata tzdata/Zones/America select Toronto' >> ~/preseed.txt
+debconf-set-selections ~/preseed.txt
+
 # install packages
 sudo apt-get update
 sudo apt-get -y upgrade
