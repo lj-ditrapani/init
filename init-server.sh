@@ -1,8 +1,5 @@
-# sbt
-echo "deb https://dl.bintray.com/sbt/debian /" | \
-    sudo tee -a /etc/apt/sources.list.d/sbt.list
-sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 \
-    --recv 2EE0EA64E40A89B84B2DF73499E82A75642AC823
+# node 10
+curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
 
 # install packages
 sudo apt-get update
@@ -27,8 +24,14 @@ mkdir -p ~/Downloads
 mkdir -p ~/tmp
 sudo npm install -g coffee-script
 
-# Seems to fail when run from install-server.sh
-sudo apt-get -y install sbt
+curl -s "https://get.sdkman.io" | bash
+source "$HOME/.sdkman/bin/sdkman-init.sh"
+sdk install java
+sdk install gradle
+sdk install sbt
+sdk install scala
+sdk install kotlin
+sdk install kscript
 
 # Setup tomcat
 echo "info.ditrapani.environment=production" | \
