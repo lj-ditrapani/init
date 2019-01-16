@@ -4,9 +4,6 @@ wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | \
 echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" | \
     sudo tee -a /etc/apt/sources.list.d/google.list
 
-# node 10
-curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
-
 # install packages
 sudo apt-get update
 sudo apt-get -y upgrade
@@ -40,9 +37,24 @@ mkdir -p ~/media
 mkdir -p ~/fun
 mkdir -p ~/Downloads
 mkdir -p ~/tmp
-sudo npm install -g coffee-script
 
 curl -s "https://get.sdkman.io" | bash
+source "$HOME/.sdkman/bin/sdkman-init.sh"
+sdk install java
+sdk install gradle
+sdk install sbt
+sdk install scala
+sdk install kotlin
+sdk install kscript
+
+wget -O - https://raw.githubusercontent.com/creationix/nvm/v0.34.0/install.sh | bash
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+nvm install --lts
+
+npm install -g coffee-script
+
+curl -L https://sh.rustup.rs | sh
 
 # This has a curses pop-up if ljd is not already in the netdev group
 sudo apt-get -y install wicd-curses

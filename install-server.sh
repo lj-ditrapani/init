@@ -12,8 +12,6 @@ sudo apt-get -y install \
     build-essential \
     mosh \
 \
-    nodejs \
-\
     curl \
     git \
     silversearcher-ag \
@@ -21,5 +19,4 @@ sudo apt-get -y install \
     openssh-server \
     pwgen \
 \
-    default-jdk-headless \
     tomcat8 \

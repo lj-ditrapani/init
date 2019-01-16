@@ -21,8 +21,6 @@ sudo apt-get -y install \
     build-essential \
     mosh \
 \
-    nodejs \
-\
     ruby-full \
     ri \
 \
@@ -48,7 +46,6 @@ sudo apt-get -y install \
     graphviz \
 \
     bvi \
-    tidy \
     dos2unix \
     sqlite3 \
     sqlite3-doc \
