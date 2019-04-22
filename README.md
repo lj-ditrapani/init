@@ -25,7 +25,7 @@ Steps
 - Log out and log back in for group assignments & user settings to take effect
 - Un-mute and set alsamixer volume
 - Manually add core gnupg key
-    - gpg --allow-secret-key-import --import main-sec.asc
+    - gpg --import main-sec.asc
     - gpg --edit-key main
     - trust
     - 5
