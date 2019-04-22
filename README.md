@@ -54,3 +54,11 @@ If hanging during boot due to "waiting for network configuration"
     sudo vim /etc/network/interfaces
 
 Comment out all interfaces but lo
+
+
+Setting timezone
+----------------
+
+    timedatectl                         # see current
+    timedatectl list-timezones          # list options
+    sudo timedatectl set-timezone Europe/Bratislava
