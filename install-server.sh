@@ -18,5 +18,4 @@ sudo apt-get -y install \
     tmux \
     openssh-server \
     pwgen \
-\
-    tomcat8 \
+    docker.io \

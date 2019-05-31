@@ -14,8 +14,9 @@ wget -O - https://raw.githubusercontent.com/lj-ditrapani/init/master/install-wor
 sudo rm -f /etc/apt/sources.list.d/google.list
 
 # setup user
-sudo chsh -s /usr/bin/zsh ljd
-sudo usermod -a -G audio,video,netdev ljd
+sudo chsh -s /usr/bin/zsh $USER
+sudo usermod -aG audio,video,netdev $USER
+sudo usermod -aG docker $USER
 
 sudo systemctl stop ssh.service
 sudo systemctl disable ssh.service

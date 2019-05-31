@@ -4,8 +4,9 @@ sudo apt-get -y upgrade
 wget -O - https://raw.githubusercontent.com/lj-ditrapani/init/master/install-server.sh | sudo bash
 
 # setup user
-sudo chsh -s /usr/bin/zsh ljd
-sudo usermod -a -G netdev ljd
+sudo chsh -s /usr/bin/zsh $USER
+sudo usermod -aG netdev $USER
+sudo usermod -aG docker $USER
 
 # dotfiles
 sudo rm -rf ~/dotfiles
