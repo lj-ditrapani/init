@@ -12,12 +12,13 @@ Steps
 - Backup data you want to keep
 - Backup gpg key/ssh key/pass repo
 - Hard-wire machine to network
-- Download and install Ubuntu 18.04 server
-    - `sudo dd bs=4M if=ubuntu-18.04-live-server-amd64.iso of=/dev/sd<?> conv=fdatasync status=progress`
+- Download and install Ubuntu 18.04.2 server
+  <http://releases.ubuntu.com/18.04.2/ubuntu-18.04.2-live-server-amd64.iso>
+    - `sudo dd bs=4M if=ubuntu-18.04.2-live-server-amd64.iso of=/dev/sd<?> conv=fdatasync status=progress`
     - Select openssh-server only
 - Then run:
     ```
-    wget -O - https://goo.gl/PG2Ht7 | bash
+    curl -L https://goo.gl/PG2Ht7 | bash
     ```
     <https://goo.gl/PG2Ht7> redirects to
     <https://raw.githubusercontent.com/lj-ditrapani/init/master/init-workstation.sh>

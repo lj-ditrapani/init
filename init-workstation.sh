@@ -55,7 +55,7 @@ nvm install --lts
 
 npm install -g coffee-script
 
-curl -L https://sh.rustup.rs | sh
+curl -L https://sh.rustup.rs | sh -s -- -y
 
 # This has a curses pop-up if ljd is not already in the netdev group
 sudo apt-get -y install wicd-curses
