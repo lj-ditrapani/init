@@ -49,9 +49,9 @@ sdk install scala
 sdk install kotlin
 sdk install kscript
 
-wget -O - https://raw.githubusercontent.com/creationix/nvm/v0.34.0/install.sh | bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
 export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
 nvm install --lts
 
 npm install -g coffee-script
@@ -67,6 +67,11 @@ sudo systemctl mask systemd-networkd-wait-online.service
 # Vim setup (seems to kill the init.sh script, so do it last)
 curl https://github.com/neovim/neovim/releases/download/nightly/nvim.appimage > ~/local/
 chmod u+x ~/local/nvim.appimage
+
+cd ~/Downloads
+curl -LO https://github.com/BurntSushi/ripgrep/releases/download/11.0.2/ripgrep_11.0.2_amd64.deb
+sudo dpkg -i ~/Downloads/ripgrep_11.0.2_amd64.deb
+cd ~
 
 curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
