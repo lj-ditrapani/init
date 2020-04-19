@@ -7,3 +7,6 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
 nvm install --lts
 # nvm alias default <version#>
 # nvm alias default 10.15.1
+sdk update
+sdk selfupdate
+sdk upgrade
