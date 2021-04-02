@@ -24,7 +24,6 @@ Steps
     <https://raw.githubusercontent.com/lj-ditrapani/init/master/init-workstation.sh>
 - Reboot to apply x11 keyboard layout
 - Log out and log back in for group assignments & user settings to take effect
-- Un-mute and set alsamixer volume
 - Manually add core gnupg key
     - gpg --import main-sec.asc
     - gpg --edit-key main
@@ -36,6 +35,7 @@ Steps
     - git clone url .password-store
 - Log into firefox sync in firefox
 - Log into google account in google chrome
+- `sudo dpkg-reconfigure tzdata` select America -> Toronto
 
 
 pass
