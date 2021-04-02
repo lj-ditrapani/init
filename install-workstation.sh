@@ -5,8 +5,8 @@ sudo apt-get -y install \
     software-properties-common \
     zsh \
     zsh-doc \
-    vim-doc \
-    vim-gtk \
+    neovim \
+    ripgrep \
     alsa-utils \
 \
     xorg \
@@ -26,7 +26,6 @@ sudo apt-get -y install \
 \
     curl \
     git \
-    silversearcher-ag \
     xsel \
     tmux \
     openssh-server \
@@ -50,7 +49,6 @@ sudo apt-get -y install \
     dos2unix \
     sqlite3 \
     sqlite3-doc \
-    xa65 \
 \
     unrar \
     p7zip-full \
