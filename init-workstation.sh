@@ -41,37 +41,25 @@ mkdir -p ~/tmp
 
 curl -s "https://get.sdkman.io" | bash
 source "$HOME/.sdkman/bin/sdkman-init.sh"
-sdk install java 8.0.202-zulufx
-sdk install java 11.0.2-zulufx
+sdk install java 16.0.0.fx-zulu
 sdk install gradle
 sdk install sbt
 sdk install scala
 sdk install kotlin
 sdk install kscript
 
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
 nvm install --lts
 
-npm install -g coffee-script
-
-curl -L https://sh.rustup.rs | sh -s -- -y
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
 
 # This has a curses pop-up if ljd is not already in the netdev group
 sudo apt-get -y install wicd-curses
 
 # Redirect to /dev/null 2 minute "waiting for network to be configured" on startup
 sudo systemctl mask systemd-networkd-wait-online.service
-
-# Vim setup (seems to kill the init.sh script, so do it last)
-curl https://github.com/neovim/neovim/releases/download/nightly/nvim.appimage > ~/local/
-chmod u+x ~/local/nvim.appimage
-
-cd ~/Downloads
-curl -LO https://github.com/BurntSushi/ripgrep/releases/download/11.0.2/ripgrep_11.0.2_amd64.deb
-sudo dpkg -i ~/Downloads/ripgrep_11.0.2_amd64.deb
-cd ~
 
 curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
