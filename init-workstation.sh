@@ -55,9 +55,6 @@ nvm install --lts
 
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
 
-# This has a curses pop-up if ljd is not already in the netdev group
-sudo apt-get -y install wicd-curses
-
 # Redirect to /dev/null 2 minute "waiting for network to be configured" on startup
 sudo systemctl mask systemd-networkd-wait-online.service
 

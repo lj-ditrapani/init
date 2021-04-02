@@ -1,5 +1,5 @@
-Setting up wireless without wicd
---------------------------------
+Setting up wireless without nmtui
+---------------------------------
 
     sudo vim /etc/netplan/01-netcfg.yaml
 
@@ -22,16 +22,3 @@ network:
 
     sudo netplan try
     sudo netplan apply
-
-
-wicd-curses issues
-------------------
-
-If blocked by rfkill
-
-    rfkill list all
-    sudo rfkill unblock all
-
-Scan without wicd-curses
-
-    sudo iwlist scan
