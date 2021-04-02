@@ -56,6 +56,7 @@ nvm install --lts
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
 
 chmod 700 ~/.gnupg
+sudo touch /etc/cloud/cloud-init.disabled
 
 # Redirect to /dev/null 2 minute "waiting for network to be configured" on startup
 sudo systemctl mask systemd-networkd-wait-online.service
