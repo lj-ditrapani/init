@@ -1,0 +1,5 @@
+- Use wayland instead of x11?
+- Figure out how to speed up bootup and shutdown?
+- dotfile script should set correct .gnupg directory permissions
+- Rewrite dotfile script from ruby to typescript?
+- test upgrade script
