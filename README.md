@@ -42,7 +42,7 @@ pass
 ----
 
     sudo update-alternatives --config editor
-    pick vim.gtk
+    pick /usr/bin/nvim
 
     # generate random bytes
     sudo apt-get install rng-tools
