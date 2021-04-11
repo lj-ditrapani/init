@@ -3,3 +3,5 @@ sudo apt-get update; sudo apt-get install --no-install-recommends make build-ess
 curl https://pyenv.run | bash
 # pyenv install --list
 # pyenv install 3.9.4
+# When you want to do python dev:
+# pyenvinit
