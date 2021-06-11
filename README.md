@@ -10,7 +10,7 @@ Steps
 -----
 
 - Backup data you want to keep
-- Backup gpg key/ssh key/pass repo
+- Backup gpg key/pass repo
 - Hard-wire machine to network
 - Download and install Ubuntu 20.04.2 server
   <https://releases.ubuntu.com/20.04.2/ubuntu-20.04.2-live-server-amd64.iso>
@@ -30,7 +30,8 @@ Steps
     - trust
     - 5
     - quit
-- Manually add ssh keys to .ssh
+- Manually create new ssh keys to .ssh (`ssh-keygen -t ed25519 -C "your_email@example.com"`)
+- Add new public ssh key to github
 - Manually add passwords
     - git clone url .password-store
 - Log into firefox sync in firefox
