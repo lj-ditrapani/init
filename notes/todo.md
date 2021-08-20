@@ -1,3 +1,5 @@
+- Warning: apt-key is deprecated.  Manage keyring files in trusted.gpg.d instead (see apt-key(8))
+    - from first line of init script: `sudo apt-key add -`
 - Use wayland instead of x11?
 - Use sway instead of i3
 - Figure out how to speed up bootup and shutdown?
