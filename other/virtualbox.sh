@@ -1,3 +1,5 @@
+# First, ensure Virtualization technology is enabled in the bios (Intel-Vi-D Intel-Vi AMD-V)
+
 # Update distro (hirsute) to whatever (jammy)
 echo "deb [arch=amd64 signed-by=/usr/share/keyrings/oracle-virtualbox-2016.gpg] https://download.virtualbox.org/virtualbox/debian hirsute contrib" \
     | sudo tee -a /etc/apt/sources.list.d/virtualbox.list
