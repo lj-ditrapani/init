@@ -29,6 +29,7 @@ cd ~/dotfiles
 git remote set-url origin git@github.com:lj-ditrapani/dotfiles.git
 cd ~
 
+# TODO: modify for wayland?
 # Map caps lock to escape
 sudo sed -i 's/XKBOPTIONS=".*"/XKBOPTIONS="caps:escape"/' /etc/default/keyboard
 
