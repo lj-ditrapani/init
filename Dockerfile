@@ -1,3 +1,6 @@
+# An issue with this is the user is root
+# and that seems to mess up some stuff like sdkman
+# would be good to switch to a regular user.
 FROM ubuntu:jammy-20220531
 RUN apt-get update
 RUN apt-get install -y apt-utils

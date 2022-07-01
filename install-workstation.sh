@@ -9,8 +9,7 @@ sudo apt-get -y install \
     ripgrep \
     alsa-utils \
 \
-    gnome-session-wayland \
-    rxvt-unicode-256color \
+    rxvt-unicode \
     ncurses-term \
     sway \
     synaptic \
