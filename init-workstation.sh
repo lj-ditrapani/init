@@ -1,8 +1,8 @@
 # google chrome
-wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | \
-    sudo apt-key add -
-echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" | \
-    sudo tee -a /etc/apt/sources.list.d/google.list
+wget -O- https://dl-ssl.google.com/linux/linux_signing_key.pub \
+    | sudo gpg --dearmor --yes --output /usr/share/keyrings/google.gpg
+echo "deb [arch=amd64 signed-by=/usr/share/keyrings/google.gpg] http://dl.google.com/linux/chrome/deb/ stable main" \
+    | sudo tee -a /etc/apt/sources.list.d/google.list
 
 # install packages
 sudo apt-get update
