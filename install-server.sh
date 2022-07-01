@@ -12,9 +12,9 @@ sudo apt-get -y install \
     build-essential \
     mosh \
 \
+    ripgrep \
     curl \
     git \
-    silversearcher-ag \
     tmux \
     openssh-server \
     pwgen \

@@ -9,15 +9,14 @@ sudo apt-get -y install \
     ripgrep \
     alsa-utils \
 \
-    xorg \
+    gnome-session-wayland \
     rxvt-unicode-256color \
     ncurses-term \
-    i3 \
+    sway \
     synaptic \
     firefox \
     google-chrome-stable \
     evince \
-    xchm \
     build-essential \
     mosh \
 \
@@ -33,11 +32,6 @@ sudo apt-get -y install \
     pass \
     docker.io \
 \
-    vlc \
-    transmission-gtk \
-\
-    gtypist \
-    inkscape \
     mesa-utils \
     feh \
     eog \
@@ -50,16 +44,18 @@ sudo apt-get -y install \
     sqlite3 \
     sqlite3-doc \
 \
-    unrar \
-    p7zip-full \
-    libreoffice-calc \
-\
     android-tools-adb \
     android-tools-fastboot \
 \
     gedit \
+    gnome-terminal \
 \
+    unrar \
+    p7zip-full \
+\
+    transmission-gtk \
     mpv \
+    vlc \
     audacious \
     gstreamer1.0-libav \
     gstreamer1.0-plugins-bad \
@@ -67,3 +63,7 @@ sudo apt-get -y install \
 \
     pulseaudio \
     pavucontrol \
+\
+    gtypist \
+    inkscape \
+    libreoffice-calc \
