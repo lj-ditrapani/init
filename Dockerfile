@@ -1,4 +1,4 @@
-FROM ubuntu:bionic-20190718
+FROM ubuntu:jammy-20220531
 RUN apt-get update
 RUN apt-get install -y apt-utils
 RUN apt-get install -y wget curl sudo gnupg2 apt-transport-https

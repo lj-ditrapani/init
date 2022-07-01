@@ -12,9 +12,9 @@ Steps
 - Backup data you want to keep
 - Backup gpg key/pass repo
 - Hard-wire machine to network
-- Download and install Ubuntu 20.04.2 server
-  <https://releases.ubuntu.com/20.04.2/ubuntu-20.04.2-live-server-amd64.iso>
-    - `sudo dd bs=4M if=ubuntu-20.04.2-live-server-amd64.iso of=/dev/sd<?> conv=fdatasync status=progress`
+- Download and install Ubuntu 22.04.2 server
+  <https://releases.ubuntu.com/22.04/ubuntu-22.04-live-server-amd64.iso>
+    - `sudo dd bs=4M if=ubuntu-22.04-live-server-amd64.iso of=/dev/sd<?> conv=fdatasync status=progress`
     - Select openssh-server only
 - Then run:
     ```

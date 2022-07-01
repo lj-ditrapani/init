@@ -1,7 +1,7 @@
 LJD Ubuntu Server Init Script
 ===============================================================================
 
-Install ubuntu 18.04 server.
+Install ubuntu 22.04 server.
 Hostname: life
 Select Standard system utilities & OpenSSH server
 Log-in and run:
