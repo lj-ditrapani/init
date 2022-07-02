@@ -9,7 +9,6 @@ sudo apt-get -y install \
     ripgrep \
     alsa-utils \
 \
-    # for keyboard select 32 (us) & 6 (dvorak)
     gnome-session \
     rxvt-unicode \
     ncurses-term \
