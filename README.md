@@ -23,7 +23,6 @@ Steps
     <https://goo.gl/PG2Ht7> redirects to
     <https://raw.githubusercontent.com/lj-ditrapani/init/master/init-workstation.sh>
 - Log out and log back in for group assignments & user settings to take effect
-- `sudo dpkg-reconfigure tzdata` select US -> Eastern
 - `sudo update-alternatives --config editor` pick /usr/bin/nvim
 - Manually add core gnupg key
     - gpg --import main-sec.asc
@@ -45,11 +44,3 @@ If hanging during boot due to "waiting for network configuration"
     sudo vim /etc/network/interfaces
 
 Comment out all interfaces but lo
-
-
-Setting timezone
-----------------
-
-    timedatectl                         # see current
-    timedatectl list-timezones          # list options
-    sudo timedatectl set-timezone US/Eastern

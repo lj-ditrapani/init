@@ -63,6 +63,8 @@ sudo rm -fr /etc/cloud && sudo rm -rf /var/lib/cloud/
 # Redirect to /dev/null 2 minute "waiting for network to be configured" on startup
 # sudo systemctl mask systemd-networkd-wait-online.service
 
+sudo timedatectl set-timezone US/Eastern
+sudo update-alternatives --set editor /usr/bin/nvim
 curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 nvim +PlugInstall +qall

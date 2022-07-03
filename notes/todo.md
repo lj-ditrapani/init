@@ -1,9 +1,8 @@
 - buy another hard wired ethernet/usb dongle
 - need a launcher bar for sway (waybar?)
-- time is wrong
+- test upgrade script
 - delete unused configs in dotfiles
+- share common install script packages between workstation & server (install-common.sh)
 - Figure out how to speed up bootup and shutdown?
 - dotfile script should set correct .gnupg directory permissions
 - Rewrite dotfile script from ruby to typescript?
-- test upgrade script
-- share common install script packages between workstation & server (install-common.sh)
