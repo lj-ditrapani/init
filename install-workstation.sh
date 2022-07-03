@@ -20,6 +20,7 @@ sudo apt-get -y install \
     evince \
     build-essential \
     mosh \
+    fonts-firacode \
 \
     ruby-full \
     ri \
