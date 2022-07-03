@@ -1,8 +1,9 @@
-- Warning: apt-key is deprecated.  Manage keyring files in trusted.gpg.d instead (see apt-key(8))
-    - from first line of init script: `sudo apt-key add -`
-- Use wayland instead of x11?
-- Use sway instead of i3
+- buy another hard wired ethernet/usb dongle
+- need a launcher bar for sway (waybar?)
+- time is wrong
+- delete unused configs in dotfiles
 - Figure out how to speed up bootup and shutdown?
 - dotfile script should set correct .gnupg directory permissions
 - Rewrite dotfile script from ruby to typescript?
 - test upgrade script
+- share common install script packages between workstation & server (install-common.sh)

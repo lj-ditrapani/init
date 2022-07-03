@@ -23,7 +23,8 @@ Steps
     <https://goo.gl/PG2Ht7> redirects to
     <https://raw.githubusercontent.com/lj-ditrapani/init/master/init-workstation.sh>
 - Log out and log back in for group assignments & user settings to take effect
-- `sudo dpkg-reconfigure tzdata` select America -> Toronto
+- `sudo dpkg-reconfigure tzdata` select US -> Eastern
+- `sudo update-alternatives --config editor` pick /usr/bin/nvim
 - Manually add core gnupg key
     - gpg --import main-sec.asc
     - gpg --edit-key main
@@ -36,17 +37,6 @@ Steps
     - git clone url .password-store
 - Log into firefox sync in firefox
 - Log into google account in google chrome
-
-
-pass
-----
-
-    sudo update-alternatives --config editor
-    pick /usr/bin/nvim
-
-    # generate random bytes
-    sudo apt-get install rng-tools
-    sudo rngd -r /dev/urandom
 
 
 If hanging during boot due to "waiting for network configuration"
@@ -62,4 +52,4 @@ Setting timezone
 
     timedatectl                         # see current
     timedatectl list-timezones          # list options
-    sudo timedatectl set-timezone Europe/Bratislava
+    sudo timedatectl set-timezone US/Eastern
