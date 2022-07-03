@@ -1,7 +1,7 @@
 # First, ensure Virtualization technology is enabled in the bios (Intel-Vi-D Intel-Vi AMD-V)
 
 # Update distro (hirsute) to whatever (jammy)
-echo "deb [arch=amd64 signed-by=/usr/share/keyrings/oracle-virtualbox-2016.gpg] https://download.virtualbox.org/virtualbox/debian hirsute contrib" \
+echo "deb [arch=amd64 signed-by=/usr/share/keyrings/oracle-virtualbox-2016.gpg] https://download.virtualbox.org/virtualbox/debian jammy contrib" \
     | sudo tee -a /etc/apt/sources.list.d/virtualbox.list
 wget -O- https://www.virtualbox.org/download/oracle_vbox_2016.asc | sudo gpg --dearmor --yes --output /usr/share/keyrings/oracle-virtualbox-2016.gpg
 # sudo apt-get update

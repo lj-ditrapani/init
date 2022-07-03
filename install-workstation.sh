@@ -10,6 +10,7 @@ sudo apt-get -y install \
     alsa-utils \
 \
     gnome-session \
+    kitty \
     rxvt-unicode \
     ncurses-term \
     sway \
