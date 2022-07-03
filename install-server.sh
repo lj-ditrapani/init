@@ -18,4 +18,5 @@ sudo apt-get -y install \
     tmux \
     openssh-server \
     pwgen \
+    ncal \
     docker.io \

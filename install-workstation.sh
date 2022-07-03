@@ -28,6 +28,7 @@ sudo apt-get -y install \
     openssh-server \
     pwgen \
     pass \
+    ncal \
     docker.io \
 \
     mesa-utils \
