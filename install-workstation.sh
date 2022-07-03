@@ -11,6 +11,7 @@ sudo apt-get -y install \
 \
     kitty \
     sway \
+    wl-clipboard \
     synaptic \
     firefox \
     google-chrome-stable \
