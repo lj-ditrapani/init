@@ -9,10 +9,7 @@ sudo apt-get -y install \
     ripgrep \
     alsa-utils \
 \
-    gnome-session \
     kitty \
-    rxvt-unicode \
-    ncurses-term \
     sway \
     synaptic \
     firefox \
@@ -26,7 +23,6 @@ sudo apt-get -y install \
 \
     curl \
     git \
-    xsel \
     tmux \
     openssh-server \
     pwgen \
