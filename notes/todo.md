@@ -1,5 +1,5 @@
 - buy another hard wired ethernet/usb dongle
-- need a launcher bar for sway (waybar?)
+- need a screenshoter (grimshot?)
 - test upgrade script
 - share common install script packages between workstation & server (install-common.sh)
 - Figure out how to speed up bootup and shutdown?
