@@ -13,6 +13,7 @@ sudo apt-get -y install \
     sway \
     wl-clipboard \
     wofi \
+    grimshot \
     synaptic \
     firefox \
     google-chrome-stable \
