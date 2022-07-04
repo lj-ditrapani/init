@@ -41,6 +41,7 @@ sudo apt-get -y install \
     fonts-roboto-slab \
     fonts-roboto-unhinted \
     network-manager \
+    iwd \
 \
     ruby-full \
     ri \
