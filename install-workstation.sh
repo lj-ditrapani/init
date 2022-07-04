@@ -40,6 +40,7 @@ sudo apt-get -y install \
     fonts-roboto \
     fonts-roboto-slab \
     fonts-roboto-unhinted \
+    network-manager \
 \
     ruby-full \
     ri \
@@ -67,9 +68,6 @@ sudo apt-get -y install \
 \
     adb \
     fastboot \
-\
-    gedit \
-    gnome-terminal \
 \
     unrar \
     p7zip-full \
