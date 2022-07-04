@@ -23,7 +23,6 @@ Steps
     <https://goo.gl/PG2Ht7> redirects to
     <https://raw.githubusercontent.com/lj-ditrapani/init/master/init-workstation.sh>
 - Log out and log back in for group assignments & user settings to take effect
-- `sudo update-alternatives --config editor` pick /usr/bin/nvim
 - Manually add core gnupg key
     - gpg --import main-sec.asc
     - gpg --edit-key main
