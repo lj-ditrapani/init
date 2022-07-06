@@ -1,4 +1,3 @@
-- test upgrade script
 - share common install script packages between workstation & server (install-common.sh)
 - Figure out how to speed up bootup and shutdown?
 - dotfile script should set correct .gnupg directory permissions
