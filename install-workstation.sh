@@ -9,7 +9,6 @@ sudo apt-get -y install \
     ripgrep \
     alsa-utils \
 \
-    kitty \
     sway \
     wl-clipboard \
     wofi \

@@ -29,6 +29,9 @@ cd ~/dotfiles
 git remote set-url origin git@github.com:lj-ditrapani/dotfiles.git
 cd ~
 
+curl -L https://sw.kovidgoyal.net/kitty/installer.sh | sh /dev/stdin
+sudo ln -s $HOME/.local/kitty.app/bin/kitty /usr/bin/kitty
+
 mkdir -p ~/local
 mkdir -p ~/usb
 mkdir -p ~/media
