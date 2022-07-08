@@ -20,26 +20,13 @@ sudo apt-get -y install \
     evince \
     build-essential \
     mosh \
-    fonts-monoid \
-    fonts-monoid-halfloose \
-    fonts-monoid-halftight \
-    fonts-monoid-tight \
-    fonts-monoid-loose \
     fonts-terminus \
     fonts-terminus-otb \
     fonts-hack \
     fonts-firacode \
     fonts-anonymous-pro \
-    fonts-jetbrains-mono \
-    fonts-proggy \
-    fonts-agave \
     fonts-ubuntu \
     fonts-dejavu \
-    fonts-cascadia-code \
-    fonts-noto-color-emoji \
-    fonts-roboto \
-    fonts-roboto-slab \
-    fonts-roboto-unhinted \
     network-manager \
     iwd \
 \
