@@ -6,4 +6,5 @@ Passwords
 
 Private encryption
 
+    gpg --output gpg-encrypt.pgp --armor --export-secret-key encrypt
     gpg --output gpg-core.pgp --armor --export-secret-key core
