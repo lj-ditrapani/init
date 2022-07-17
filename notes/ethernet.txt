@@ -13,3 +13,17 @@ To disable this, You can create a blank file with the same name in /etc:
     sudo systemctl restart NetworkManager
 
 <https://askubuntu.com/questions/71159/network-manager-says-device-not-managed>
+<https://askubuntu.com/questions/882806/ethernet-device-not-managed>
+
+You can disable wifi with
+
+    nmcli radio wifi off
+
+Turn it back on with
+
+    nmcli radio wifi on
+
+Get device info
+
+    nmcli
+    nmcli device
