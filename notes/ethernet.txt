@@ -1,0 +1,15 @@
+If you cannot enable ethernet because network manager reports it as unmanaged:
+
+Ubuntu installs a config file that sets most devices unmanaged:
+
+    /usr/lib/NetworkManager/conf.d/10-globally-managed-devices.conf:
+
+    [keyfile]
+    unmanaged-devices=*,except:type:wifi,except:type:gsm,except:type:cdma
+
+To disable this, You can create a blank file with the same name in /etc:
+
+    sudo touch /etc/NetworkManager/conf.d/10-globally-managed-devices.conf
+    sudo systemctl restart NetworkManager
+
+<https://askubuntu.com/questions/71159/network-manager-says-device-not-managed>
