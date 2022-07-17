@@ -3,7 +3,7 @@ Forcing connection to specific BSSID
 
 List BSSIDs
 
-    nmcli -f in-use,ssid,bssid,signal,bars  dev wifi
+    nmcli device wifi
 
 Connect to specific BSSID
 
