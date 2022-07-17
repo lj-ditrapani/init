@@ -1,3 +1,16 @@
+Forcing connection to specific BSSID
+------------------------------------
+
+List BSSIDs
+
+    nmcli -f in-use,ssid,bssid,signal,bars  dev wifi
+
+Connect to specific BSSID
+
+    nmcli d wifi connect XX:XX:XX:XX:XX:XX
+
+<https://askubuntu.com/questions/833905/how-can-i-connect-to-a-specific-bssid>
+
 Setting up wireless without nmtui
 ---------------------------------
 
