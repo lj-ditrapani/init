@@ -1,0 +1,15 @@
+
+    sh <(curl -sSf https://downloads.nordcdn.com/apps/linux/install.sh)
+
+You should be added to the nordvpn group.
+Log-out and back-in for new group to take effect.
+
+<https://support.nordvpn.com/Connectivity/Linux/1325531132/Installing-and-using-NordVPN-on-Debian-Ubuntu-Raspberry-Pi-Elementary-OS-and-Linux-Mint.htm>
+
+    nordvpn login
+
+Copy link in "continue" and paste as <nordvpnlink> below.
+
+    nordvpn login --callback "<nordvpnlink>"
+
+<https://wiki.archlinux.org/title/NordVPN>
