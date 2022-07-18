@@ -1,0 +1,16 @@
+A start job is running for /sys/subsystem/net/devices/wlo1
+
+Look for files in
+
+    /etc/netplan/
+
+that subiquity created
+
+example
+
+    /etc/netplan/00-installer-config-wifi.yaml
+    /etc/netplan/00-installer-config.yaml
+
+Delete these files.
+The os is waiting for the interface to be available.  But it will never be.
+Because the name is wrong.
