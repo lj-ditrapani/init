@@ -17,7 +17,7 @@ Because the name is wrong.
 In this case, the wifi was named wlo1 when subiquity ran.  But now is named wlan0.
 Also, wlan0 is disabled.
 
-There were my old instructions:
+These were my old instructions:
 
     # Redirect to /dev/null 2 minute "waiting for network to be configured" on startup
-    # sudo systemctl mask systemd-networkd-wait-online.service
+    sudo systemctl mask systemd-networkd-wait-online.service
