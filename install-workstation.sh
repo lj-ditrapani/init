@@ -13,6 +13,8 @@ sudo apt-get -y install \
     wl-clipboard \
     wofi \
     grimshot \
+    kitty-terminfo \
+    kitty-doc \
     synaptic \
     firefox \
     google-chrome-stable \
