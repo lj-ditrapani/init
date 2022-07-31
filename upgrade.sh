@@ -1,5 +1,7 @@
 sudo apt-get update
 sudo apt-get upgrade
+# To update kernel (check packages selected are ok)
+# sudo apt-get dist-upgrade
 sudo pip3 install --upgrade pip
 vim +PluginUpdate +qall
 rustup update
