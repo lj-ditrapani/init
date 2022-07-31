@@ -20,6 +20,8 @@ sudo apt-get -y install \
     google-chrome-stable \
     evince \
     build-essential \
+    cmake \
+    pkg-config \
     mosh \
     fonts-terminus \
     fonts-terminus-otb \
