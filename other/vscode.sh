@@ -7,3 +7,7 @@ code --enable-features=UseOzonePlatform --ozone-platform=wayland --log debug
 # install extensions
 # - vim
 # - Scala (metals)
+# - Scala Syntax
+# - Language Support for Java by Red Hat
+# - Debugger for Java
+# - Test Runner for Java
