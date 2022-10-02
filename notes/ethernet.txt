@@ -27,3 +27,6 @@ Get device info
 
     nmcli
     nmcli device
+
+I cannot ssh/sftp over the ethernet switch.
+I can over wifi.
