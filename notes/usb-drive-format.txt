@@ -1,0 +1,8 @@
+# List block devices
+lsblk
+# Prepare disk; Replace x with your device letter
+sudo parted /dev/sdx --align opt mklabel gpt 0 8G
+# Create partition
+sudo parted /dev/sda -a opt mkpart primary 2048s 8G
+# Format partition
+sudo mkfs.ext4 -L hpData8 /dev/sdx1
