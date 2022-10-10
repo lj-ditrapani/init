@@ -6,6 +6,7 @@ vscode
 code --enable-features=UseOzonePlatform --ozone-platform=wayland --log debug
 # install extensions
 # - vim
+# - prettier (set prettier as default)
 # - Scala (metals)
 # - Scala Syntax
 # - Language Support for Java by Red Hat
