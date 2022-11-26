@@ -12,3 +12,8 @@ code --enable-features=UseOzonePlatform --ozone-platform=wayland --log debug
 # - Language Support for Java by Red Hat
 # - Debugger for Java
 # - Test Runner for Java
+
+# In case caps lock stops working as esc:
+{
+    "keyboard.dispatch": "keyCode"
+}
