@@ -11,6 +11,7 @@ sudo apt-get -y install \
 \
     sway \
     wl-clipboard \
+    xsel \
     wofi \
     grimshot \
     kitty-terminfo \
