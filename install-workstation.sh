@@ -13,6 +13,7 @@ sudo apt-get -y install \
     i3 \
     wl-clipboard \
     xsel \
+    pinentry-gtk2 \
     wofi \
     grimshot \
     kitty-terminfo \
