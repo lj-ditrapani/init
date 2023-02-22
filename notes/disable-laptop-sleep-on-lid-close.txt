@@ -1,0 +1,6 @@
+    sudo vim /etc/systemd/logind.conf
+
+uncomment HandleLidSwitch entries and assign to ignore
+
+    HandleLidSwitch=ignore
+    HandleLidSwitchExternalPower=ignore
