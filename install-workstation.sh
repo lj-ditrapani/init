@@ -10,6 +10,7 @@ sudo apt-get -y install \
     alsa-utils \
 \
     sway \
+    i3 \
     wl-clipboard \
     xsel \
     wofi \
