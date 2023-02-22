@@ -32,6 +32,9 @@ cd ~
 curl -L https://sw.kovidgoyal.net/kitty/installer.sh | sh /dev/stdin
 sudo ln -s $HOME/.local/kitty.app/bin/kitty /usr/bin/kitty
 
+# Map caps lock to escape for xorg
+sudo sed -i 's/XKBOPTIONS=".*"/XKBOPTIONS="caps:escape"/' /etc/default/keyboard
+
 mkdir -p ~/local
 mkdir -p ~/usb
 mkdir -p ~/media
