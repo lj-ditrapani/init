@@ -46,7 +46,9 @@ sudo apt-get -y install \
     pwgen \
     pass \
     ncal \
-    docker.io \
+    docker-ce \
+    docker-ce-cli \
+    docker-compose-plugin \
 \
     mesa-utils \
     feh \
