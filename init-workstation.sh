@@ -32,6 +32,7 @@ sudo usermod -aG docker $USER
 
 sudo systemctl stop ssh.service
 sudo systemctl disable ssh.service
+sudo sed -i 's/#PasswordAuthentication yes/PasswordAuthentication no/g' /etc/ssh/sshd_config
 
 # dotfiles
 sudo rm -rf ~/dotfiles
