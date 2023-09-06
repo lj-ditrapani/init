@@ -81,6 +81,7 @@ sudo apt-get -y install \
     unrar \
     p7zip-full \
 \
+    keepassxc \
     transmission-gtk \
     mpv \
     vlc \
