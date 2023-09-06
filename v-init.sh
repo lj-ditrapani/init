@@ -6,7 +6,9 @@ sudo usermod -aG docker $USER
 # dotfiles
 sudo rm -rf ~/dotfiles
 git clone https://github.com/lj-ditrapani/dotfiles.git ~/dotfiles
+cd ~/dotfiles
 git checkout vbranch
+cd ~
 ~/dotfiles/link.rb
 cd ~
 
@@ -37,3 +39,6 @@ nvm install --lts
 curl https://pyenv.run | bash
 
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
+
+curl -L "https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-x64" > ~/Downloads/vscode.deb
+sudo dpkg -i ~/Downloads/vscode.deb
