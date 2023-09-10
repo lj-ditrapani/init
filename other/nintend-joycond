@@ -1,0 +1,5 @@
+https://github.com/DanielOgorchock/joycond
+
+    sudo apt-get install libudev-dev
+
+Then, follow instructions in readme.
