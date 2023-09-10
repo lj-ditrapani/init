@@ -35,3 +35,13 @@ Steps
     - git clone url .password-store
 - Log into firefox sync in firefox
     - config ABP
+- install vscode extensions
+    - vim
+    - prettier (set prettier as default)
+    - python (intelliSense pylance)
+    - Language Support for Java by Red Hat
+    - Debugger for Java
+    - Test Runner for Java
+    - Scala (metals)
+    - Scala Syntax
+
