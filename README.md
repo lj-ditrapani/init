@@ -39,6 +39,7 @@ Steps
     - vim
     - prettier (set prettier as default)
     - python (intelliSense pylance)
+    - isort (python sort imports)
     - Language Support for Java by Red Hat
     - Debugger for Java
     - Test Runner for Java
