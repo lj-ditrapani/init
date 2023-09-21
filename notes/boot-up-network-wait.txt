@@ -20,4 +20,5 @@ Also, wlan0 is disabled.
 These were my old instructions:
 
     # Redirect to /dev/null 2 minute "waiting for network to be configured" on startup
+    systemctl disable systemd-networkd-wait-online.service
     sudo systemctl mask systemd-networkd-wait-online.service
