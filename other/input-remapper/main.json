@@ -1,0 +1,46 @@
+[
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 1,
+                "origin_hash": "bfaac7fda719a70c13dac908dc0352b5"
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "KEY_GRAVE",
+        "name": "back-tick",
+        "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 54,
+                "origin_hash": "bfaac7fda719a70c13dac908dc0352b5"
+            },
+            {
+                "type": 1,
+                "code": 1,
+                "origin_hash": "bfaac7fda719a70c13dac908dc0352b5"
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "KEY_RIGHTSHI + KEY_GRAVE",
+        "name": "tilda",
+        "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 127,
+                "origin_hash": "bfaac7fda719a70c13dac908dc0352b5"
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "KEY_RIGHTMETA",
+        "name": "right-window",
+        "mapping_type": "key_macro"
+    }
+]

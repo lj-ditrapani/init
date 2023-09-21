@@ -1,0 +1,163 @@
+[
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 30,
+                "origin_hash": "bfaac7fda719a70c13dac908dc0352b5"
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "KEY_1",
+        "name": "1",
+        "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 31,
+                "origin_hash": "bfaac7fda719a70c13dac908dc0352b5"
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "KEY_2",
+        "name": "2",
+        "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 32,
+                "origin_hash": "bfaac7fda719a70c13dac908dc0352b5"
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "KEY_3",
+        "name": "3",
+        "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 33,
+                "origin_hash": "bfaac7fda719a70c13dac908dc0352b5"
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "KEY_4",
+        "name": "4",
+        "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 34,
+                "origin_hash": "bfaac7fda719a70c13dac908dc0352b5"
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "KEY_5",
+        "name": "5",
+        "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 35,
+                "origin_hash": "bfaac7fda719a70c13dac908dc0352b5"
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "KEY_6",
+        "name": "6",
+        "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 36,
+                "origin_hash": "bfaac7fda719a70c13dac908dc0352b5"
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "KEY_7",
+        "name": "7",
+        "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 37,
+                "origin_hash": "bfaac7fda719a70c13dac908dc0352b5"
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "KEY_8",
+        "name": "8",
+        "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 38,
+                "origin_hash": "bfaac7fda719a70c13dac908dc0352b5"
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "KEY_9",
+        "name": "9",
+        "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 39,
+                "origin_hash": "bfaac7fda719a70c13dac908dc0352b5"
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "KEY_0",
+        "name": "0",
+        "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 1,
+                "origin_hash": "bfaac7fda719a70c13dac908dc0352b5"
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "KEY_GRAVE",
+        "name": "backtick",
+        "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 54,
+                "origin_hash": "bfaac7fda719a70c13dac908dc0352b5"
+            },
+            {
+                "type": 1,
+                "code": 1,
+                "origin_hash": "bfaac7fda719a70c13dac908dc0352b5"
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "KEY_RIGHTSHIFT + KEY_GRAVE",
+        "name": "tilda",
+        "mapping_type": "key_macro"
+    }
+]
