@@ -24,7 +24,7 @@ sudo apt-get -y install \
     evince \
     build-essential \
     cmake \
-    pkg-config \
+    pkgconf \
     mosh \
     fonts-terminus \
     fonts-terminus-otb \
@@ -62,6 +62,7 @@ sudo apt-get -y install \
     libxmlsec1-dev \
     libffi-dev \
     liblzma-dev \
+    default-libmysqlclient-dev \
 \
     mesa-utils \
     feh \
