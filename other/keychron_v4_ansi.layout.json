@@ -142,10 +142,10 @@
       "KC_NO",
       "KC_NO",
       "KC_NO",
-      "KC_RALT",
+      "MO(3)",
       "KC_RGUI",
       "KC_RCTL",
-      "MO(3)"
+      "KC_RALT"
     ],
     [
       "KC_GRV",
@@ -289,7 +289,7 @@
       "KC_RALT",
       "KC_RGUI",
       "KC_RCTL",
-      "KC_TRNS"
+      "KC_RALT"
     ],
     [
       "KC_TRNS",
@@ -361,7 +361,7 @@
       "KC_RALT",
       "KC_RGUI",
       "KC_RCTL",
-      "KC_TRNS"
+      "KC_RALT"
     ]
   ],
   "encoders": []
