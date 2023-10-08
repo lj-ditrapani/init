@@ -75,6 +75,8 @@ sudo apt-get -y install \
     dos2unix \
     sqlite3 \
     sqlite3-doc \
+    xev \
+    wev \
 \
     adb \
     fastboot \
