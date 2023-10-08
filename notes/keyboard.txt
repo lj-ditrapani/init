@@ -1,0 +1,2 @@
+# change keyboard layout for both console & gui
+sudo dpkg-reconfigure keyboard-configuration
