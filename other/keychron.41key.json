@@ -13,7 +13,7 @@
       "KC_NO",
       "KC_NO",
       "OSL(3)",
-      "KC_NO",
+      "KC_RGUI",
       "KC_NO",
       "KC_NO",
       "KC_NO",
@@ -61,7 +61,7 @@
       "KC_NO",
       "KC_RSFT",
       "KC_NO",
-      "KC_LGUI",
+      "KC_NO",
       "KC_LCTL",
       "KC_NO",
       "KC_NO",
@@ -72,7 +72,7 @@
       "KC_NO",
       "KC_RCTL",
       "KC_NO",
-      "KC_RGUI",
+      "KC_NO",
       "KC_NO"
     ],
     [
@@ -205,7 +205,7 @@
       "KC_NO",
       "KC_RSFT",
       "KC_NO",
-      "KC_LGUI",
+      "KC_NO",
       "KC_LCTL",
       "KC_NO",
       "KC_NO",
@@ -216,7 +216,7 @@
       "KC_NO",
       "KC_RCTL",
       "KC_NO",
-      "KC_RGUI",
+      "KC_NO",
       "KC_NO"
     ],
     [
@@ -277,7 +277,7 @@
       "KC_NO",
       "KC_RSFT",
       "KC_NO",
-      "KC_LGUI",
+      "KC_NO",
       "KC_LCTL",
       "KC_NO",
       "KC_NO",
@@ -288,7 +288,7 @@
       "KC_NO",
       "KC_RCTL",
       "KC_NO",
-      "KC_RGUI",
+      "KC_NO",
       "KC_NO"
     ],
     [
@@ -301,7 +301,7 @@
       "KC_NO",
       "KC_NO",
       "TO(3)",
-      "KC_NO",
+      "KC_LALT",
       "KC_NO",
       "KC_NO",
       "KC_NO",
@@ -349,7 +349,7 @@
       "KC_NO",
       "KC_RSFT",
       "KC_NO",
-      "KC_LALT",
+      "KC_NO",
       "KC_LCTL",
       "KC_NO",
       "KC_NO",
@@ -360,7 +360,7 @@
       "KC_NO",
       "KC_RCTL",
       "KC_NO",
-      "KC_RALT",
+      "KC_NO",
       "KC_NO"
     ]
   ],
