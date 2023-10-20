@@ -10,6 +10,7 @@ sudo apt-get -y install \
     alsa-utils \
 \
     sway \
+    swaylock \
     i3 \
     wl-clipboard \
     xsel \
