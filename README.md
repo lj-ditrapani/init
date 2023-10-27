@@ -15,10 +15,10 @@ Steps
     - `sudo dd bs=4M if=ubuntu-23.10.1-desktop-amd64.iso of=/dev/sd<?> conv=fdatasync status=progress`
 - Then run:
     ```
-    wget -O - https://goo.gl/PG2Ht7 | bash
+    wget -O - https://t.ly/30gNP | bash
     ```
-    <https://goo.gl/PG2Ht7> redirects to
-    <https://raw.githubusercontent.com/lj-ditrapani/init/master/init-workstation.sh>
+    <https://t.ly/30gNP> redirects to
+    <https://raw.githubusercontent.com/lj-ditrapani/init/main/init.sh>
 - Log out and log back in for group assignments & user settings to take effect
 - Manually add core gnupg key
     - gpg --import main-sec.asc
