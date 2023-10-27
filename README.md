@@ -2,8 +2,6 @@ LJD Ubuntu Init Script
 ===============================================================================
 
 Installs my favorite packages and configures everything the way I like it.
-This is for a graphical workstation.
-See the [README-server.md](README-server.md) for a non-graphical server version.
 
 
 Steps
