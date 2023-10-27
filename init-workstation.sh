@@ -1,9 +1,3 @@
-# google chrome
-wget -O- https://dl-ssl.google.com/linux/linux_signing_key.pub \
-    | sudo gpg --dearmor --yes --output /usr/share/keyrings/google.gpg
-echo "deb [arch=amd64 signed-by=/usr/share/keyrings/google.gpg] http://dl.google.com/linux/chrome/deb/ stable main" \
-    | sudo tee -a /etc/apt/sources.list.d/google.list
-
 # instructions: https://i3wm.org/docs/repositories.html
 /usr/lib/apt/apt-helper download-file https://debian.sur5r.net/i3/pool/main/s/sur5r-keyring/sur5r-keyring_2023.02.18_all.deb keyring.deb SHA256:a511ac5f10cd811f8a4ca44d665f2fa1add7a9f09bef238cdfad8461f5239cc4
 sudo apt install ./keyring.deb
@@ -21,9 +15,6 @@ sudo apt-get update
 sudo apt-get -y upgrade
 sudo sed -i '/cdrom/d' /etc/apt/sources.list
 wget -O - https://raw.githubusercontent.com/lj-ditrapani/init/master/install-workstation.sh | sudo bash
-
-# Because google chrome deb will create its own file
-sudo rm -f /etc/apt/sources.list.d/google.list
 
 # setup user
 sudo chsh -s /usr/bin/zsh $USER
@@ -44,9 +35,6 @@ cd ~
 
 curl -L https://sw.kovidgoyal.net/kitty/installer.sh | sh /dev/stdin
 sudo ln -s $HOME/.local/kitty.app/bin/kitty /usr/bin/kitty
-
-# Map caps lock to escape for xorg
-sudo sed -i 's/XKBOPTIONS=".*"/XKBOPTIONS="caps:escape"/' /etc/default/keyboard
 
 mkdir -p ~/local
 mkdir -p ~/usb

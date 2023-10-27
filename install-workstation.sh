@@ -8,6 +8,8 @@ sudo apt-get -y install \
     neovim \
     ripgrep \
     alsa-utils \
+    gnupg \
+    ca-certificates \
 \
     sway \
     swaylock \
