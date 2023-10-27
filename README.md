@@ -10,13 +10,12 @@ Steps
 - Backup data you want to keep
 - Backup gpg key/pass repo
 - Hard-wire machine to network
-- Download and install Ubuntu 22.04.2 server
-  <https://releases.ubuntu.com/22.04/ubuntu-22.04-live-server-amd64.iso>
-    - `sudo dd bs=4M if=ubuntu-22.04-live-server-amd64.iso of=/dev/sd<?> conv=fdatasync status=progress`
-    - Select openssh-server only
+- Download and install Ubuntu Desktop 23.10.1
+  <https://releases.ubuntu.com/23.10.1/ubuntu-23.10.1-desktop-amd64.iso>
+    - `sudo dd bs=4M if=ubuntu-23.10.1-desktop-amd64.iso of=/dev/sd<?> conv=fdatasync status=progress`
 - Then run:
     ```
-    curl -L https://goo.gl/PG2Ht7 | bash
+    wget -O - https://goo.gl/PG2Ht7 | bash
     ```
     <https://goo.gl/PG2Ht7> redirects to
     <https://raw.githubusercontent.com/lj-ditrapani/init/master/init-workstation.sh>
