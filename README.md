@@ -42,4 +42,15 @@ Steps
     - Test Runner for Java
     - Scala (metals)
     - Scala Syntax
-
+- make sure password is encrypted using yescrypt with 11 rounds
+    ```
+    sudo vim /etc/pam.d/common-password
+    password	[success=1 default=ignore]	pam_unix.so obscure yescrypt rounds=11
+    ```
+- copy .config/monitors.xml over to /var/lib/gdm3/.config
+- disable laptop suspend on lid switch, set to ignore.
+    ```
+    sudo vim /etc/systemd/logind.conf
+    HandleLidSwitch=ignore
+    ```
+- try adding ssh-agent to .zprofile?
