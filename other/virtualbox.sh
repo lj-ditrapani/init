@@ -1,13 +1,13 @@
 # First, ensure Virtualization technology is enabled in the bios (Intel-Vi-D Intel-Vi AMD-V)
 
-# Update distro (hirsute) to whatever (jammy)
-echo "deb [arch=amd64 signed-by=/usr/share/keyrings/oracle-virtualbox-2016.gpg] https://download.virtualbox.org/virtualbox/debian jammy contrib" \
-    | sudo tee -a /etc/apt/sources.list.d/virtualbox.list
-wget -O- https://www.virtualbox.org/download/oracle_vbox_2016.asc | sudo gpg --dearmor --yes --output /usr/share/keyrings/oracle-virtualbox-2016.gpg
-# sudo apt-get update
-# sudo apt-get install virtualbox-6.1
-
+# on host machine:
+sudo apt-get install virtualbox
 # Extension pack
-# Download virtualbox extention from https://www.virtualbox.org/wiki/Downloads
-# https://download.virtualbox.org/virtualbox/6.1.34/Oracle_VM_VirtualBox_Extension_Pack-6.1.34.vbox-extpack
-# sudo vboxmanage extpack install Oracle_VM_VirtualBox_Extension_Pack-6.1.34.vbox-extpack
+sudo apt install virtualbox-ext-pack
+sudo apt-get install virtualbox-guest-additions-iso
+# downloads the iso here on host machine
+/usr/share/virtualbox/VBoxGuestAdditions.iso
+# load the iso into the vm optical drive
+
+# in virtual machine guest:
+run the script on the iso disk
