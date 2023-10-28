@@ -23,7 +23,6 @@ sudo apt-get -y install \
     kitty-doc \
     synaptic \
     firefox \
-    google-chrome-stable \
     evince \
     build-essential \
     cmake \
@@ -58,7 +57,7 @@ sudo apt-get -y install \
     libbz2-dev \
     libreadline-dev \
     libsqlite3-dev \
-    libncursesw5-dev \
+    libncurses-dev \
     xz-utils \
     tk-dev \
     libxml2-dev \
@@ -78,7 +77,6 @@ sudo apt-get -y install \
     dos2unix \
     sqlite3 \
     sqlite3-doc \
-    xev \
     wev \
 \
     adb \
