@@ -62,7 +62,6 @@ chmod 700 ~/.gnupg
 sudo apt purge cloud-init -y
 sudo rm -fr /etc/cloud && sudo rm -rf /var/lib/cloud/
 
-sudo timedatectl set-timezone US/Eastern
 sudo update-alternatives --set editor /usr/bin/nvim
 curl -L "https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-x64" > ~/Downloads/vscode.deb
 sudo dpkg -i ~/Downloads/vscode.deb
