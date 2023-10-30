@@ -45,7 +45,14 @@ Steps
 - make sure password is encrypted using yescrypt with 11 rounds
     ```
     sudo vim /etc/pam.d/common-password
-    password	[success=1 default=ignore]	pam_unix.so obscure yescrypt rounds=11
+    password	[success=2 default=ignore]	pam_unix.so ... yescrypt rounds=11
+    # just make sure the line ends with yescrypt rounds=11
+    cat /etc/shadow
+    # make sure it uses $y instead of $6.  If $6, then continue:
+    passwd  # change to temp password
+    passwd  # change back to desired password
+    cat /etc/shadow
+    # now it should have $y
     ```
 - copy .config/monitors.xml over to /var/lib/gdm3/.config
 - disable laptop suspend on lid switch, set to ignore.
