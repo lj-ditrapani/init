@@ -62,13 +62,13 @@ chmod 700 ~/.gnupg
 sudo apt purge cloud-init -y
 sudo rm -fr /etc/cloud && sudo rm -rf /var/lib/cloud/
 
-sudo update-alternatives --set editor /usr/bin/nvim
 curl -L "https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-x64" > ~/Downloads/vscode.deb
 sudo dpkg -i ~/Downloads/vscode.deb
-
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo dpkg -i google-chrome-stable_current_amd64.deb
 
+sudo update-alternatives --set pinentry /usr/bin/pinentry-gtk-2
+sudo update-alternatives --set editor /usr/bin/nvim
 curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 nvim +PlugInstall +qall
