@@ -60,4 +60,4 @@ Steps
     sudo vim /etc/systemd/logind.conf
     HandleLidSwitch=ignore
     ```
-- try adding ssh-agent to .zprofile?
+- for nvidia, unsure proprietary gpu drivers 535 non-open.
