@@ -54,4 +54,3 @@ Steps
     HandleLidSwitch=ignore
     ```
 - try adding ssh-agent to .zprofile?
-- setup google chrome (restore install step)
