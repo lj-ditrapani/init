@@ -21,13 +21,13 @@ Steps
     <https://raw.githubusercontent.com/lj-ditrapani/init/main/init.sh>
 - Log out and log back in for group assignments & user settings to take effect
 - Manually add core gnupg key
-    - gpg --import main-sec.asc
-    - gpg --edit-key main
+    - gpg --import gpg-pass-sec.asc
+    - gpg --edit-key pass
     - trust
     - 5
     - quit
 - Manually create new ssh keys to .ssh (`ssh-keygen -t ed25519 -C "your_email@example.com"`)
-- Add new public ssh key to github
+- Add new public ssh key to git repos
 - Manually add passwords
     - git clone url .password-store
 - Log into firefox sync in firefox
@@ -47,17 +47,18 @@ Steps
     sudo vim /etc/pam.d/common-password
     password	[success=2 default=ignore]	pam_unix.so ... yescrypt rounds=11
     # just make sure the line ends with yescrypt rounds=11
-    cat /etc/shadow
+    sudo cat /etc/shadow
     # make sure it uses $y instead of $6.  If $6, then continue:
     passwd  # change to temp password
     passwd  # change back to desired password
     cat /etc/shadow
     # now it should have $y
     ```
-- copy .config/monitors.xml over to /var/lib/gdm3/.config
+- copy monitor config to gdp to get mirrored display at login screen as-well.
+  `sudo cp .config/monitors.xml /var/lib/gdm3/.config`
 - disable laptop suspend on lid switch, set to ignore.
     ```
     sudo vim /etc/systemd/logind.conf
     HandleLidSwitch=ignore
     ```
-- for nvidia, unsure proprietary gpu drivers 535 non-open.
+- for nvidia, ensure proprietary gpu drivers 535 non-open.
