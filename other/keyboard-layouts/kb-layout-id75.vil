@@ -108,10 +108,10 @@
                 "KC_L"
             ],
             [
-                "OSM(MOD_LALT)",
-                "OSM(MOD_LGUI)",
-                "OSM(MOD_LSFT)",
-                "OSM(MOD_LCTL)",
+                "KC_LALT",
+                "KC_LGUI",
+                "KC_LSHIFT",
+                "KC_LCTRL",
                 "KC_NO",
                 "KC_NO",
                 "KC_NO",
@@ -125,10 +125,10 @@
                 "KC_S"
             ],
             [
-                "KC_NO",
-                "KC_NO",
-                "KC_NO",
-                "KC_NO",
+                "OSM(MOD_LALT)",
+                "OSM(MOD_LGUI)",
+                "OSM(MOD_LSFT)",
+                "OSM(MOD_LCTL)",
                 "KC_NO",
                 "KC_NO",
                 "KC_NO",
@@ -206,10 +206,10 @@
                 "KC_NO",
                 "KC_NO",
                 "KC_NO",
-                "OSM(MOD_RCTL)",
-                "OSM(MOD_RSFT)",
-                "OSM(MOD_RGUI)",
-                "OSM(MOD_RALT)"
+                "KC_RCTRL",
+                "KC_RSHIFT",
+                "KC_RGUI",
+                "KC_RALT"
             ],
             [
                 "KC_SCOLON",
@@ -223,10 +223,10 @@
                 "KC_NO",
                 "KC_NO",
                 "KC_NO",
-                "KC_NO",
-                "KC_NO",
-                "KC_NO",
-                "KC_NO"
+                "OSM(MOD_RCTL)",
+                "OSM(MOD_RSFT)",
+                "OSM(MOD_RGUI)",
+                "OSM(MOD_RALT)"
             ],
             [
                 "KC_NO",
@@ -282,10 +282,10 @@
                 "KC_NO"
             ],
             [
-                "OSM(MOD_LALT)",
-                "OSM(MOD_LGUI)",
-                "OSM(MOD_LSFT)",
-                "OSM(MOD_LCTL)",
+                "KC_LALT",
+                "KC_LGUI",
+                "KC_LSHIFT",
+                "KC_LCTRL",
                 "KC_NO",
                 "KC_NO",
                 "KC_NO",
@@ -299,10 +299,10 @@
                 "KC_EQUAL"
             ],
             [
-                "KC_NO",
-                "KC_NO",
-                "KC_NO",
-                "KC_NO",
+                "OSM(MOD_LALT)",
+                "OSM(MOD_LGUI)",
+                "OSM(MOD_LSFT)",
+                "OSM(MOD_LCTL)",
                 "KC_NO",
                 "KC_NO",
                 "KC_NO",
@@ -380,10 +380,10 @@
                 "KC_NO",
                 "KC_NO",
                 "KC_NO",
-                "OSM(MOD_RCTL)",
-                "OSM(MOD_RSFT)",
-                "OSM(MOD_RGUI)",
-                "OSM(MOD_RALT)"
+                "KC_RCTRL",
+                "KC_RSHIFT",
+                "KC_RGUI",
+                "KC_RALT"
             ],
             [
                 "LSFT(KC_GRAVE)",
@@ -397,10 +397,10 @@
                 "KC_NO",
                 "KC_NO",
                 "KC_NO",
-                "KC_NO",
-                "KC_NO",
-                "KC_NO",
-                "KC_NO"
+                "OSM(MOD_RCTL)",
+                "OSM(MOD_RSFT)",
+                "OSM(MOD_RGUI)",
+                "OSM(MOD_RALT)"
             ],
             [
                 "KC_NO",
@@ -456,10 +456,10 @@
                 "KC_NO"
             ],
             [
-                "OSM(MOD_LALT)",
-                "OSM(MOD_LGUI)",
-                "OSM(MOD_LSFT)",
-                "OSM(MOD_LCTL)",
+                "KC_LALT",
+                "KC_LGUI",
+                "KC_LSHIFT",
+                "KC_LCTRL",
                 "KC_NO",
                 "KC_NO",
                 "KC_NO",
@@ -473,10 +473,10 @@
                 "KC_NO"
             ],
             [
-                "KC_NO",
-                "KC_NO",
-                "KC_NO",
-                "KC_NO",
+                "OSM(MOD_LALT)",
+                "OSM(MOD_LGUI)",
+                "OSM(MOD_LSFT)",
+                "OSM(MOD_LCTL)",
                 "KC_NO",
                 "KC_NO",
                 "KC_NO",
@@ -554,10 +554,10 @@
                 "KC_NO",
                 "KC_NO",
                 "KC_NO",
-                "OSM(MOD_RCTL)",
-                "OSM(MOD_RSFT)",
-                "OSM(MOD_RGUI)",
-                "OSM(MOD_RALT)"
+                "KC_RCTRL",
+                "KC_RSHIFT",
+                "KC_RGUI",
+                "KC_RALT"
             ],
             [
                 "KC_NO",
@@ -571,10 +571,10 @@
                 "KC_NO",
                 "KC_NO",
                 "KC_NO",
-                "KC_NO",
-                "KC_NO",
-                "KC_NO",
-                "KC_NO"
+                "OSM(MOD_RCTL)",
+                "OSM(MOD_RSFT)",
+                "OSM(MOD_RGUI)",
+                "OSM(MOD_RALT)"
             ],
             [
                 "KC_NO",
@@ -630,10 +630,10 @@
                 "KC_NO"
             ],
             [
-                "OSM(MOD_LALT)",
-                "OSM(MOD_LGUI)",
-                "OSM(MOD_LSFT)",
-                "OSM(MOD_LCTL)",
+                "KC_LALT",
+                "KC_LGUI",
+                "KC_LSHIFT",
+                "KC_LCTRL",
                 "KC_NO",
                 "KC_NO",
                 "KC_NO",
@@ -647,10 +647,10 @@
                 "KC_NO"
             ],
             [
-                "KC_NO",
-                "KC_NO",
-                "KC_NO",
-                "KC_NO",
+                "OSM(MOD_LALT)",
+                "OSM(MOD_LGUI)",
+                "OSM(MOD_LSFT)",
+                "OSM(MOD_LCTL)",
                 "KC_NO",
                 "KC_NO",
                 "KC_NO",
@@ -728,10 +728,10 @@
                 "KC_NO",
                 "KC_NO",
                 "KC_NO",
-                "OSM(MOD_RCTL)",
-                "OSM(MOD_RSFT)",
-                "OSM(MOD_RGUI)",
-                "OSM(MOD_RALT)"
+                "KC_RCTRL",
+                "KC_RSHIFT",
+                "KC_RGUI",
+                "KC_RALT"
             ],
             [
                 "RGB_TOG",
@@ -745,10 +745,10 @@
                 "KC_NO",
                 "KC_NO",
                 "KC_NO",
-                "KC_NO",
-                "KC_NO",
-                "KC_NO",
-                "KC_NO"
+                "OSM(MOD_RCTL)",
+                "OSM(MOD_RSFT)",
+                "OSM(MOD_RGUI)",
+                "OSM(MOD_RALT)"
             ],
             [
                 "KC_NO",
