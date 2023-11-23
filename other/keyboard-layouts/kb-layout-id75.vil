@@ -125,10 +125,10 @@
                 "KC_S"
             ],
             [
-                "OSM(MOD_LALT)",
-                "OSM(MOD_LGUI)",
-                "OSM(MOD_LSFT)",
-                "OSM(MOD_LCTL)",
+                "KC_TAB",
+                "KC_BSPACE",
+                "KC_SPACE",
+                "KC_ENTER",
                 "KC_NO",
                 "KC_NO",
                 "KC_NO",
@@ -153,7 +153,7 @@
                 "KC_NO",
                 "KC_NO",
                 "KC_SPACE",
-                "KC_BSPACE",
+                "KC_NO",
                 "KC_NO",
                 "KC_NO",
                 "KC_NO"
@@ -232,7 +232,7 @@
                 "KC_NO",
                 "KC_NO",
                 "KC_NO",
-                "KC_ESCAPE",
+                "KC_NO",
                 "KC_SPACE",
                 "KC_NO",
                 "KC_NO",
@@ -251,7 +251,7 @@
                 "KC_NO",
                 "KC_NO",
                 "KC_NO",
-                "KC_TAB",
+                "KC_ENTER",
                 "KC_NO",
                 "KC_NO",
                 "KC_NO",
@@ -327,7 +327,7 @@
                 "KC_NO",
                 "KC_NO",
                 "KC_NO",
-                "KC_DELETE",
+                "KC_NO",
                 "KC_NO",
                 "KC_NO",
                 "KC_NO"
@@ -352,10 +352,10 @@
         ],
         [
             [
-                "KC_NO",
-                "KC_NO",
-                "KC_NO",
-                "KC_NO",
+                "LSFT(KC_QUOTE)",
+                "LSFT(KC_COMMA)",
+                "LSFT(KC_DOT)",
+                "LSFT(KC_SCOLON)",
                 "KC_LBRACKET",
                 "KC_NO",
                 "KC_NO",
@@ -470,7 +470,7 @@
                 "KC_1",
                 "KC_2",
                 "KC_3",
-                "KC_NO"
+                "KC_BSPACE"
             ],
             [
                 "OSM(MOD_LALT)",
@@ -483,11 +483,11 @@
                 "KC_NO",
                 "KC_NO",
                 "KC_NO",
-                "KC_NO",
+                "KC_DOT",
                 "KC_7",
                 "KC_8",
                 "KC_9",
-                "KC_NO"
+                "KC_DELETE"
             ],
             [
                 "KC_NO",
@@ -500,8 +500,8 @@
                 "KC_NO",
                 "KC_NO",
                 "KC_NO",
-                "KC_0",
-                "KC_DOT",
+                "KC_NO",
+                "KC_NO",
                 "KC_NO",
                 "KC_NO",
                 "KC_NO"
@@ -543,7 +543,7 @@
                 "KC_NO"
             ],
             [
-                "KC_NO",
+                "KC_ESCAPE",
                 "KC_LEFT",
                 "KC_DOWN",
                 "KC_RIGHT",
@@ -560,7 +560,7 @@
                 "KC_RALT"
             ],
             [
-                "KC_NO",
+                "KC_TAB",
                 "KC_NO",
                 "KC_PGDOWN",
                 "KC_PGUP",
@@ -704,7 +704,7 @@
                 "KC_APPLICATION",
                 "KC_MS_U",
                 "KC_NO",
-                "KC_NO",
+                "RGB_HUI",
                 "KC_NO",
                 "KC_NO",
                 "KC_NO",
