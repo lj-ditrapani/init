@@ -25,3 +25,6 @@ vim ~/.mednafen/mednafen.cfg
 sound.device default
 # to
 sound.device sexyal-literal-default
+
+# to play playstation, you need to copy over your bios file
+cp scph5501.bin .mednafen/firmware
