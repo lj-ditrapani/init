@@ -57,7 +57,7 @@
       "KC_V",
       "KC_Z",
       "KC_BSPC",
-      "KC_NO",
+      "MO(7)",
       "MO(5)",
       "MO(1)",
       "KC_LSFT",
@@ -66,7 +66,7 @@
       "KC_SPC",
       "MO(2)",
       "MO(6)",
-      "KC_NO"
+      "MO(8)"
     ],
     [
       "KC_NO",
@@ -106,10 +106,10 @@
       "KC_S",
       "KC_ENT",
       "KC_BSPC",
-      "KC_TAB",
-      "KC_BSPC",
+      "KC_NO",
+      "KC_NO",
       "KC_DEL",
-      "KC_ENT",
+      "KC_SPC",
       "KC_NO",
       "KC_NO",
       "KC_NO",
@@ -228,7 +228,7 @@
       "KC_AT",
       "KC_HASH",
       "KC_EQL",
-      "KC_BSPC",
+      "KC_NO",
       "KC_NO",
       "KC_NO",
       "KC_NO",
@@ -242,7 +242,7 @@
       "KC_ASTR",
       "KC_PLUS",
       "KC_NO",
-      "KC_DEL",
+      "KC_NO",
       "KC_NO",
       "KC_NO",
       "KC_NO",
@@ -279,7 +279,7 @@
       "KC_NO",
       "KC_NO",
       "KC_NO",
-      "KC_TAB",
+      "KC_NO",
       "KC_GRV",
       "KC_BSLS",
       "KC_SLSH",
@@ -491,7 +491,7 @@
       "KC_F9",
       "KC_NO",
       "KC_NO",
-      "KC_NO",
+      "KC_TRNS",
       "KC_NO",
       "KC_NO",
       "KC_NO",
@@ -562,7 +562,7 @@
       "KC_NO",
       "KC_NO",
       "KC_NO",
-      "KC_NO"
+      "KC_TRNS"
     ]
   ],
   "author": "lj Di Trapani"
