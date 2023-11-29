@@ -1,2 +1,5 @@
+# add
+MOUSEKEY_ENABLE = yes
+to the keymap’s rules.mK
 qmk compile -e CONVERT_TO=promicro_rp2040 ~/fun/init/other/keyboard-layouts/qmk-layout-sofle-ljd-sparkfun.json
 qmk compile -e CONVERT_TO=elite_pi ~/fun/init/other/keyboard-layouts/qmk-layout-helix-ljd-elite-pi.json
