@@ -1,3 +1,11 @@
+Setup a qmk-workdir with
+- pyenv (.python-version)
+- venv (qmkenv)
+See qmk instructions for details.
+pyenvinit
+source qmkenv/bin/activate
+clone qmk repo to ~/qmk_firmware
+
 # add
 MOUSEKEY_ENABLE = yes
 to the keymap’s rules.mK
@@ -5,3 +13,6 @@ qmk compile -e CONVERT_TO=promicro_rp2040 ~/fun/init/other/keyboard-layouts/qmk-
 qmk compile -e CONVERT_TO=elite_pi ~/fun/init/other/keyboard-layouts/qmk-layout-helix-ljd-elite-pi.json
 
 You can put the rp2040 into boot mode by double pressing the reset button on the keyboard!
+
+Firware will be in ~/qmk_firware.
+Just copy into usb while micro in boot mode for both micros.
