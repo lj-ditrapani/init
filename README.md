@@ -54,7 +54,7 @@ Steps
     cat /etc/shadow
     # now it should have $y
     ```
-- copy monitor config to gdp to get mirrored display at login screen as-well.
+- copy monitor config to gdm to get mirrored display at login screen as-well.
   `sudo cp .config/monitors.xml /var/lib/gdm3/.config`
 - disable laptop suspend on lid switch, set to ignore.
     ```
