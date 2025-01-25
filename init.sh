@@ -17,8 +17,7 @@ wget -O - https://raw.githubusercontent.com/lj-ditrapani/init/main/install.sh | 
 
 # setup user
 sudo chsh -s /usr/bin/zsh $USER
-sudo usermod -aG audio,video,netdev $USER
-sudo usermod -aG docker $USER
+sudo usermod -aG audio,video,netdev,docker $USER
 
 sudo systemctl stop ssh.service
 sudo systemctl disable ssh.service
@@ -27,7 +26,7 @@ sudo sed -i 's/#PasswordAuthentication yes/PasswordAuthentication no/g' /etc/ssh
 # dotfiles
 sudo rm -rf ~/dotfiles
 git clone https://github.com/lj-ditrapani/dotfiles.git ~/dotfiles
-~/dotfiles/link.rb
+~/dotfiles/link.py
 cd ~/dotfiles
 git remote set-url origin git@github.com:lj-ditrapani/dotfiles.git
 cd ~
@@ -44,19 +43,18 @@ mkdir -p ~/tmp
 
 curl -s "https://get.sdkman.io" | bash
 source "$HOME/.sdkman/bin/sdkman-init.sh"
-sdk install java 21.0.1-tem
+sdk install java 23.0.1-tem
 sdk install gradle
 sdk install sbt
 sdk install scala
 sdk install kotlin
-sdk install kscript
 
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
 nvm install --lts
 
-curl https://pyenv.run | bash
+curl -fsSL https://pyenv.run | bash
 
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
 
