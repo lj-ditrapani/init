@@ -12,7 +12,6 @@ echo \
 # install packages
 sudo apt-get update
 sudo apt-get -y upgrade
-sudo sed -i '/cdrom/d' /etc/apt/sources.list
 wget -O - https://raw.githubusercontent.com/lj-ditrapani/init/main/install.sh | sudo bash
 
 # setup user
