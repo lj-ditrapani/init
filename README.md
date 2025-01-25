@@ -21,6 +21,7 @@ Steps
     <https://raw.githubusercontent.com/lj-ditrapani/init/main/init.sh>
 - Log out and log back in for group assignments & user settings to take effect
 - Manually add core gnupg key
+    - gpg --output gpg-pass-sec.asc --armor --export-secret-key pass
     - gpg --import gpg-pass-sec.asc
     - gpg --edit-key pass
     - trust
