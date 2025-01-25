@@ -10,9 +10,9 @@ Steps
 - Backup data you want to keep
 - Backup gpg key/pass repo
 - Hard-wire machine to network
-- Download and install Ubuntu Desktop 23.10.1
-  <https://releases.ubuntu.com/23.10.1/ubuntu-23.10.1-desktop-amd64.iso>
-    - `sudo dd bs=4M if=ubuntu-23.10.1-desktop-amd64.iso of=/dev/sd<?> conv=fdatasync status=progress`
+- Download and install Ubuntu Desktop 24.10
+  <https://releases.ubuntu.com/24.10/ubuntu-24.10-desktop-amd64.iso>
+    - `sudo dd bs=4M if=ubuntu-24.10-desktop-amd64.iso of=/dev/sd<?> conv=fdatasync status=progress`
 - Then run:
     ```
     wget -O - https://t.ly/30gNP | bash
