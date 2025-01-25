@@ -14,5 +14,5 @@ qmk compile -e CONVERT_TO=elite_pi ~/fun/init/other/keyboard-layouts/qmk-layout-
 
 You can put the rp2040 into boot mode by double pressing the reset button on the keyboard!
 
-Firware will be in ~/qmk_firware.
+Firmware will be in ~/qmk_firmware.
 Just copy into usb while micro in boot mode for both micros.
