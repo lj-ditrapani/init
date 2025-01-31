@@ -63,10 +63,16 @@ curl -fsSL https://pyenv.run | bash
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
 
 mkdir -p ~/.local/bin
-curl -L "https://ziglang.org/builds/zig-linux-x86_64-0.14.0-dev.2851+b074fb7dd.tar.xz" > .local
+curl -L "https://ziglang.org/builds/zig-linux-x86_64-0.14.0-dev.2851+b074fb7dd.tar.xz" -o ~/.local/zig-0.14.0
 cd ~/.local
-tar -xf zig-linux-x86_64-0.14.0-dev.2851+b074fb7dd.tar.xz
-ln -s $HOME/.local/zig-linux-x86_64-0.14.0-dev.2851+b074fb7dd/zig $HOME/.local/bin
+tar -xf zig-0.14.0
+ln -s $HOME/.local/zig-0.14.0/zig $HOME/.local/bin
+cd
+
+curl -L "https://github.com/gleam-lang/gleam/releases/download/v1.7.0/gleam-v1.7.0-x86_64-unknown-linux-musl.tar.gz" -o ~/.local/gleam-1.7.0.tar.gz
+cd ~/.local
+tar -xf gleam-1.7.0.tar.gz
+mv gleam ~/.local/bin/
 cd
 
 chmod 700 ~/.gnupg

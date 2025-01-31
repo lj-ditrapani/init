@@ -39,8 +39,7 @@ sudo apt-get -y install \
     iwd \
 \
     dart \
-    ruby-full \
-    ri \
+    erlang \
 \
     curl \
     git \
