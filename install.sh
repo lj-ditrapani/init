@@ -38,6 +38,7 @@ sudo apt-get -y install \
     network-manager \
     iwd \
 \
+    dart \
     ruby-full \
     ri \
 \

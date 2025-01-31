@@ -9,6 +9,11 @@ echo \
   $(. /etc/os-release && echo "$VERSION_CODENAME") stable" | \
   sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
 
+wget -qO- https://dl-ssl.google.com/linux/linux_signing_key.pub \
+  | sudo gpg  --dearmor -o /usr/share/keyrings/dart.gpg
+echo 'deb [signed-by=/usr/share/keyrings/dart.gpg arch=amd64] https://storage.googleapis.com/download.dartlang.org/linux/debian stable main' \
+  | sudo tee /etc/apt/sources.list.d/dart_stable.list
+
 # install packages
 sudo apt-get update
 sudo apt-get -y upgrade
@@ -57,6 +62,13 @@ curl -fsSL https://pyenv.run | bash
 
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
 
+mkdir -p ~/.local/bin
+curl -L "https://ziglang.org/builds/zig-linux-x86_64-0.14.0-dev.2851+b074fb7dd.tar.xz" > .local
+cd ~/.local
+tar -xf zig-linux-x86_64-0.14.0-dev.2851+b074fb7dd.tar.xz
+ln -s $HOME/.local/zig-linux-x86_64-0.14.0-dev.2851+b074fb7dd/zig $HOME/.local/bin
+cd
+
 chmod 700 ~/.gnupg
 sudo apt purge cloud-init -y
 sudo rm -fr /etc/cloud && sudo rm -rf /var/lib/cloud/
@@ -65,6 +77,7 @@ curl -L "https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-x6
 sudo dpkg -i ~/Downloads/vscode.deb
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo dpkg -i google-chrome-stable_current_amd64.deb
+
 
 sudo update-alternatives --set pinentry /usr/bin/pinentry-gtk-2
 sudo update-alternatives --set editor /usr/bin/nvim
