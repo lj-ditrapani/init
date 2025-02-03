@@ -47,7 +47,7 @@ mkdir -p ~/tmp
 
 curl -s "https://get.sdkman.io" | bash
 source "$HOME/.sdkman/bin/sdkman-init.sh"
-sdk install java 23.0.1-tem
+sdk install java 23.0.2-tem
 sdk install gradle
 sdk install sbt
 sdk install scala
