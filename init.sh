@@ -69,12 +69,6 @@ tar -xf zig-0.14.0
 ln -s $HOME/.local/zig-0.14.0/zig $HOME/.local/bin
 cd
 
-curl -L "https://github.com/gleam-lang/gleam/releases/download/v1.7.0/gleam-v1.7.0-x86_64-unknown-linux-musl.tar.gz" -o ~/.local/gleam-1.7.0.tar.gz
-cd ~/.local
-tar -xf gleam-1.7.0.tar.gz
-mv gleam ~/.local/bin/
-cd
-
 chmod 700 ~/.gnupg
 sudo apt purge cloud-init -y
 sudo rm -fr /etc/cloud && sudo rm -rf /var/lib/cloud/
