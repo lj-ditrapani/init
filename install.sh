@@ -39,7 +39,7 @@ sudo apt-get -y install \
     iwd \
 \
     dart \
-    erlang \
+    opam \
 \
     curl \
     git \
