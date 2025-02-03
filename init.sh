@@ -66,7 +66,7 @@ mkdir -p ~/.local/bin
 curl -L "https://ziglang.org/builds/zig-linux-x86_64-0.14.0-dev.2851+b074fb7dd.tar.xz" -o ~/.local/zig-0.14.0
 cd ~/.local
 tar -xf zig-0.14.0
-ln -s $HOME/.local/zig-0.14.0/zig $HOME/.local/bin
+ln -s $HOME/.local/zig-linux-x86_64-0.14.0-dev.2851+b074fb7dd/zig $HOME/.local/bin
 cd
 
 chmod 700 ~/.gnupg
