@@ -35,15 +35,17 @@ Steps
     - config ABP
 - install vscode extensions
     - vim
-    - prettier (set prettier as default)
     - OCaml Platform
+    - rust-analyzer
+    - Scala (metals)
+    - Scala Syntax
+    - Dart
+    - prettier (set prettier as default)
     - python (intelliSense pylance)
     - isort (python sort imports)
     - Language Support for Java by Red Hat
     - Debugger for Java
     - Test Runner for Java
-    - Scala (metals)
-    - Scala Syntax
 - make sure password is encrypted using yescrypt with 11 rounds
     ```
     sudo vim /etc/pam.d/common-password
