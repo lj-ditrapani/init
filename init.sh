@@ -76,7 +76,7 @@ sudo rm -fr /etc/cloud && sudo rm -rf /var/lib/cloud/
 # don't run as root
 opam init -y
 eval $(opam env --switch=default)
-opam install ocaml-lsp-server odoc ocamlformat utop
+opam install ocaml-lsp-server odoc ocamlformat utop merlin
 
 curl -L "https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-x64" > ~/Downloads/vscode.deb
 sudo dpkg -i ~/Downloads/vscode.deb

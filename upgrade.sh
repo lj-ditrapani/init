@@ -12,3 +12,4 @@ pyenv update
 sdk update
 sdk selfupdate
 sdk upgrade
+opam update
