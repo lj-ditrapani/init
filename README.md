@@ -35,6 +35,7 @@ Steps
     - config ABP
 - install vscode extensions
     - vim
+    - Zig Language
     - OCaml Platform
     - rust-analyzer
     - Scala (metals)
