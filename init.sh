@@ -86,6 +86,7 @@ sudo dpkg -i google-chrome-stable_current_amd64.deb
 
 sudo update-alternatives --set pinentry /usr/bin/pinentry-gtk-2
 sudo update-alternatives --set editor /usr/bin/nvim
+sudo snap install intellij-idea-community --classic
 curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 nvim +PlugInstall +qall
