@@ -63,10 +63,14 @@ curl -fsSL https://pyenv.run | bash
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
 
 mkdir -p ~/.local/bin
-curl -L "https://ziglang.org/builds/zig-linux-x86_64-0.14.0-dev.2851+b074fb7dd.tar.xz" -o ~/.local/zig-0.14.0
+# ziglang can be crazy slow
+# "https://ziglang.org/download/0.14.0/zig-linux-x86_64-0.14.0.tar.xz"
+# Using mirror instead
+curl -L "https://zigmirror.nesovic.dev/zig/zig-linux-x86_64-0.15.0-dev.10+214750fcf.tar.xz" -o ~/.local/zig-0.15.0.tar.xz
 cd ~/.local
-tar -xf zig-0.14.0
-ln -s $HOME/.local/zig-linux-x86_64-0.14.0-dev.2851+b074fb7dd/zig $HOME/.local/bin
+tar -xf zig-0.15.0.tar.xz
+rm -f $HOME/.local/bin/zig
+ln -s $HOME/.local/zig-linux-x86_64-0.15.0-dev.10+214750fcf/zig $HOME/.local/bin
 cd
 
 chmod 700 ~/.gnupg
