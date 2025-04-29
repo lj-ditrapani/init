@@ -1,6 +1,6 @@
 # ----
 # try it this way next time:
-sudo add-apt-repository multiverse
+sudo apt-add-repository multiverse
 sudo apt update
 sudo apt install steam
 # ----
