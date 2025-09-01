@@ -3,10 +3,7 @@ cd ~/fun/qmk_firmware
 uv tool install qmk
 qmk setup
 
-# add
-MOUSEKEY_ENABLE = yes
-to the keymap’s rules.mK (e.g. keyboards/sofle/keymaps/default/rules.mk)
-qmk compile -e CONVERT_TO=promicro_rp2040 ~/fun/init/other/keyboard-layouts/qmk-layout-sofle-ljd-sparkfun.json
+qmk compile -e CONVERT_TO=sparkfun_pm2040 ~/fun/init/other/keyboard-layouts/qmk-layout-sofle-ljd-sparkfun.json
 qmk compile -e CONVERT_TO=elite_pi ~/fun/init/other/keyboard-layouts/qmk-layout-helix-ljd-elite-pi.json
 
 You can put the rp2040 into boot mode by double pressing the reset button on the keyboard!
