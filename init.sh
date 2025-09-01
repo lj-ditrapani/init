@@ -59,6 +59,7 @@ export NVM_DIR="$HOME/.nvm"
 nvm install --lts
 
 curl -fsSL https://pyenv.run | bash
+curl -LsSf https://astral.sh/uv/install.sh | sh
 
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
 

@@ -9,6 +9,7 @@ curl -L https://sw.kovidgoyal.net/kitty/installer.sh | sh /dev/stdin
 nvm install --lts
 # nvm alias default <version#>
 pyenv update
+uv self update
 sdk update
 sdk selfupdate
 sdk upgrade
