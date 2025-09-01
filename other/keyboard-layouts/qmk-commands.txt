@@ -1,14 +1,11 @@
-Setup a qmk-workdir with
-- pyenv (.python-version)
-- venv (qmkenv)
-See qmk instructions for details.
-pyenvinit
-source qmkenv/bin/activate
-clone qmk repo to ~/qmk_firmware
+Clone your fork of qmk to ~/fun/qmk_firmware
+cd ~/fun/qmk_firmware
+uv tool install qmk
+qmk setup
 
 # add
 MOUSEKEY_ENABLE = yes
-to the keymap’s rules.mK
+to the keymap’s rules.mK (e.g. keyboards/sofle/keymaps/default/rules.mk)
 qmk compile -e CONVERT_TO=promicro_rp2040 ~/fun/init/other/keyboard-layouts/qmk-layout-sofle-ljd-sparkfun.json
 qmk compile -e CONVERT_TO=elite_pi ~/fun/init/other/keyboard-layouts/qmk-layout-helix-ljd-elite-pi.json
 
