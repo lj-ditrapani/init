@@ -6,8 +6,8 @@ sudo curl -fsSL https://download.docker.com/linux/ubuntu/gpg -o /etc/apt/keyring
 sudo chmod 644 /etc/apt/keyrings/docker.asc
 echo \
   "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.asc] https://download.docker.com/linux/ubuntu \
-  $(. /etc/os-release && echo "$VERSION_CODENAME") stable" |
-  sudo tee /etc/apt/sources.list.d/docker.list >/dev/null
+  $(. /etc/os-release && echo "$VERSION_CODENAME") stable" | \
+  sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
 
 # install packages
 sudo apt-get update
@@ -40,13 +40,7 @@ mkdir -p ~/Downloads
 mkdir -p ~/tmp
 mkdir -p ~/.local/bin
 
-curl -s "https://get.sdkman.io" | bash
-source "$HOME/.sdkman/bin/sdkman-init.sh"
-sdk install java 23.0.2-tem
-sdk install gradle
-sdk install sbt
-sdk install scala
-sdk install kotlin
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
 
 chmod 700 ~/.gnupg
 sudo apt purge cloud-init -y
@@ -54,6 +48,7 @@ sudo rm -fr /etc/cloud && sudo rm -rf /var/lib/cloud/
 
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+
 brew install \
   neovim \
   fish \
@@ -83,21 +78,12 @@ sh <(curl --proto '=https' --tlsv1.2 -L https://nixos.org/nix/install) --daemon
 # for fish:
 # sh (curl -L https://nixos.org/nix/install | psub) --daemon
 
-# don't run as root
-opam init -y
-eval $(opam env --switch=default)
-opam install ocaml-lsp-server odoc ocamlformat utop merlin
-
-curl -L "https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-x64" >~/Downloads/vscode.deb
-sudo dpkg -i ~/Downloads/vscode.deb
-wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-sudo dpkg -i google-chrome-stable_current_amd64.deb
-
 sudo update-alternatives --set pinentry /usr/bin/pinentry-gtk-2
 sudo update-alternatives --install /usr/bin/editor editor /home/linuxbrew/.linuxbrew/bin/nvim 60
 sudo update-alternatives --set editor /home/linuxbrew/.linuxbrew/bin/nvim
 
-sudo snap install intellij-idea-community --classic
+sudo update-alternatives --set pinentry /usr/bin/pinentry-gtk-2
+sudo update-alternatives --set editor /usr/bin/nvim
 sudo snap install ghostty --classic
 
 curl -fsS https://dl.brave.com/install.sh | sh
