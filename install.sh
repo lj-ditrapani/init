@@ -47,7 +47,6 @@ sudo apt-get -y install \
     docker-ce-cli \
     docker-compose-plugin \
 \
-    libfuse2 \
     libssl-dev \
     zlib1g-dev \
     libbz2-dev \
@@ -66,7 +65,6 @@ sudo apt-get -y install \
     feh \
     eog \
     imagemagick \
-    imagemagick-doc \
     graphviz \
 \
     bvi \
