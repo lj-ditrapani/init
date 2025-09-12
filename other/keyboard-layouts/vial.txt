@@ -1,0 +1,4 @@
+in chrome url bar:
+chrome://device-log/
+see recent error with hidrawN, note number N.
+sudo setfacl -m "u:${USER}:rw" /dev/hidrawN
