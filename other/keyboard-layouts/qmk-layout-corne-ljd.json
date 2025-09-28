@@ -84,13 +84,13 @@
       "RALT_T(KC_S)",
       "KC_NO",
       "KC_NO",
-      "KC_TRNS",
+      "KC_SCLN",
       "KC_Q",
       "KC_J",
       "KC_K",
       "KC_X",
-      "KC_TRNS",
-      "KC_TRNS",
+      "KC_B",
+      "KC_M",
       "KC_W",
       "KC_V",
       "KC_Z",
@@ -100,7 +100,7 @@
       "LT(4,KC_TAB)",
       "LT(5,KC_ENT)",
       "LT(3,KC_SPC)",
-      "KC_TRNS"
+      "LT(7,KC_BSPC)"
     ],
     [
       "KC_NO",
