@@ -45,6 +45,9 @@ mkdir -p ~/fun
 mkdir -p ~/Downloads
 mkdir -p ~/tmp
 
+curl -OL "https://github.com/helix-editor/helix/releases/download/25.07.1/helix_25.7.1-1_amd64.deb" --output-dir ~/Downloads
+sudo dpkg -i ~/Downloads/helix_25.7.1-1_amd64.deb
+
 curl -s "https://get.sdkman.io" | bash
 source "$HOME/.sdkman/bin/sdkman-init.sh"
 sdk install java 23.0.2-tem
