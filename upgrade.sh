@@ -13,3 +13,4 @@ sdk update
 sdk selfupdate
 sdk upgrade
 opam update
+sudo snap refresh

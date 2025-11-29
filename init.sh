@@ -86,6 +86,7 @@ ln -s /usr/bin/batcat ~/.local/bin/bat
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 brew install nushell
+brew install typst
 
 sh <(curl --proto '=https' --tlsv1.2 -L https://nixos.org/nix/install) --daemon
 # for fish:
@@ -101,10 +102,12 @@ sudo dpkg -i ~/Downloads/vscode.deb
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo dpkg -i google-chrome-stable_current_amd64.deb
 
+curl -fsS https://dl.brave.com/install.sh | sh
 
 sudo update-alternatives --set pinentry /usr/bin/pinentry-gtk-2
 sudo update-alternatives --set editor /usr/bin/nvim
 sudo snap install intellij-idea-community --classic
+sudo snap install ghostty --classic
 curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 nvim +PlugInstall +qall
