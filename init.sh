@@ -87,6 +87,10 @@ ln -s /usr/bin/batcat ~/.local/bin/bat
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 brew install nushell
 
+sh <(curl --proto '=https' --tlsv1.2 -L https://nixos.org/nix/install) --daemon
+# for fish:
+# sh (curl -L https://nixos.org/nix/install | psub) --daemon
+
 # don't run as root
 opam init -y
 eval $(opam env --switch=default)
