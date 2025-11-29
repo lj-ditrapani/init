@@ -83,6 +83,9 @@ sudo apt purge cloud-init -y
 sudo rm -fr /etc/cloud && sudo rm -rf /var/lib/cloud/
 
 ln -s /usr/bin/batcat ~/.local/bin/bat
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+brew install nushell
 
 # don't run as root
 opam init -y
