@@ -3,6 +3,7 @@ sudo apt-get -y install \
     zip \
     unzip \
     software-properties-common \
+    fish \
     zsh \
     zsh-doc \
     neovim \

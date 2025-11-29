@@ -14,13 +14,15 @@ wget -qO- https://dl-ssl.google.com/linux/linux_signing_key.pub \
 echo 'deb [signed-by=/usr/share/keyrings/dart.gpg arch=amd64] https://storage.googleapis.com/download.dartlang.org/linux/debian stable main' \
   | sudo tee /etc/apt/sources.list.d/dart_stable.list
 
+sudo add-apt-repository ppa:fish-shell/release-4
+
 # install packages
 sudo apt-get update
 sudo apt-get -y upgrade
 wget -O - https://raw.githubusercontent.com/lj-ditrapani/init/main/install.sh | sudo bash
 
 # setup user
-sudo chsh -s /usr/bin/zsh $USER
+sudo chsh -s /usr/bin/fish $USER
 sudo usermod -aG audio,video,netdev,docker $USER
 
 sudo systemctl stop ssh.service
