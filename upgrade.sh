@@ -1,13 +1,12 @@
 sudo apt-get update
 sudo apt-get upgrade
 # To update kernel (check packages selected are ok)
-# sudo apt-get dist-upgrade
+# sudo do-release-upgrade
+# sudo apt install update-manager-core # povides do-release-upgrade
 vim +PluginUpdate +qall
-rustup update
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.3/install.sh | bash
 curl -L https://sw.kovidgoyal.net/kitty/installer.sh | sh /dev/stdin
-nvm install --lts
-# nvm alias default <version#>
+curl -fsSL https://fnm.vercel.app/install | bash -s -- --skip-shell
+rustup update
 pyenv update
 uv self update
 sdk update

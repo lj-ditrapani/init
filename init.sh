@@ -46,9 +46,14 @@ mkdir -p ~/media
 mkdir -p ~/fun
 mkdir -p ~/Downloads
 mkdir -p ~/tmp
+mkdir -p ~/.local/bin
 
 curl -OL "https://github.com/helix-editor/helix/releases/download/25.07.1/helix_25.7.1-1_amd64.deb" --output-dir ~/Downloads
 sudo dpkg -i ~/Downloads/helix_25.7.1-1_amd64.deb
+
+curl -fsSL https://fnm.vercel.app/install | bash
+fnm env --use-on-cd --shell fish | source
+fnm install --lts
 
 curl -s "https://get.sdkman.io" | bash
 source "$HOME/.sdkman/bin/sdkman-init.sh"
@@ -58,18 +63,10 @@ sdk install sbt
 sdk install scala
 sdk install kotlin
 
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.3/install.sh | bash
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
-nvm install --lts
-
 curl -fsSL https://pyenv.run | bash
 curl -LsSf https://astral.sh/uv/install.sh | sh
 
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
-
-mkdir -p ~/.local/bin
-ln -s /usr/bin/batcat ~/.local/bin/bat
 
 # ziglang can be crazy slow
 # "https://ziglang.org/download/0.14.0/zig-linux-x86_64-0.14.0.tar.xz"
@@ -84,6 +81,8 @@ cd
 chmod 700 ~/.gnupg
 sudo apt purge cloud-init -y
 sudo rm -fr /etc/cloud && sudo rm -rf /var/lib/cloud/
+
+ln -s /usr/bin/batcat ~/.local/bin/bat
 
 # don't run as root
 opam init -y
