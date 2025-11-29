@@ -8,7 +8,9 @@ sudo apt-get -y install \
     zsh-doc \
     neovim \
     ripgrep \
+    fzf \
     fd-find \
+    bat \
     alsa-utils \
     gnupg \
     ca-certificates \

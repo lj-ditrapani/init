@@ -69,6 +69,8 @@ curl -LsSf https://astral.sh/uv/install.sh | sh
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
 
 mkdir -p ~/.local/bin
+ln -s /usr/bin/batcat ~/.local/bin/bat
+
 # ziglang can be crazy slow
 # "https://ziglang.org/download/0.14.0/zig-linux-x86_64-0.14.0.tar.xz"
 # Using mirror instead
