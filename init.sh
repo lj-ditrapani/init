@@ -54,6 +54,7 @@ sudo dpkg -i ~/Downloads/helix_25.7.1-1_amd64.deb
 curl -fsSL https://fnm.vercel.app/install | bash
 fnm env --use-on-cd --shell fish | source
 fnm install --lts
+npm install -g typescript-language-server
 
 curl -s "https://get.sdkman.io" | bash
 source "$HOME/.sdkman/bin/sdkman-init.sh"
@@ -65,6 +66,8 @@ sdk install kotlin
 
 curl -fsSL https://pyenv.run | bash
 curl -LsSf https://astral.sh/uv/install.sh | sh
+uv tool install ruff@latest ty@latest
+# uv tool install "python-lsp-server[all]"
 
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
 
@@ -85,8 +88,7 @@ sudo rm -fr /etc/cloud && sudo rm -rf /var/lib/cloud/
 ln -s /usr/bin/batcat ~/.local/bin/bat
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
-brew install nushell
-brew install typst
+brew install nushell typst rust-analyzer
 
 sh <(curl --proto '=https' --tlsv1.2 -L https://nixos.org/nix/install) --daemon
 # for fish:
