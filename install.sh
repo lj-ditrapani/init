@@ -6,7 +6,6 @@ sudo apt-get -y install \
     fish \
     zsh \
     zsh-doc \
-    neovim \
     ripgrep \
     fzf \
     fd-find \

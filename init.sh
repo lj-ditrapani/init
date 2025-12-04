@@ -87,7 +87,7 @@ sudo rm -fr /etc/cloud && sudo rm -rf /var/lib/cloud/
 ln -s /usr/bin/batcat ~/.local/bin/bat
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
-brew install nushell typst rust-analyzer harper
+brew install neovim nushell typst rust-analyzer harper
 
 sh <(curl --proto '=https' --tlsv1.2 -L https://nixos.org/nix/install) --daemon
 # for fish:
