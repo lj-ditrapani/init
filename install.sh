@@ -3,13 +3,8 @@ sudo apt-get -y install \
     zip \
     unzip \
     software-properties-common \
-    fish \
     zsh \
     zsh-doc \
-    ripgrep \
-    fzf \
-    fd-find \
-    bat \
     alsa-utils \
     gnupg \
     ca-certificates \
@@ -40,9 +35,6 @@ sudo apt-get -y install \
     fonts-dejavu \
     network-manager \
     iwd \
-\
-    dart \
-    opam \
 \
     curl \
     git \
