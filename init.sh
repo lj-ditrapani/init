@@ -97,7 +97,8 @@ sudo dpkg -i google-chrome-stable_current_amd64.deb
 curl -fsS https://dl.brave.com/install.sh | sh
 
 sudo update-alternatives --set pinentry /usr/bin/pinentry-gtk-2
-sudo update-alternatives --set editor /usr/bin/nvim
+sudo update-alternatives --install /usr/bin/editor editor /home/linuxbrew/.linuxbrew/bin/nvim 60
+sudo update-alternatives --set editor /home/linuxbrew/.linuxbrew/bin/nvim
 sudo snap install intellij-idea-community --classic
 sudo snap install ghostty --classic
 curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
