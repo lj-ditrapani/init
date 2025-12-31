@@ -67,6 +67,7 @@ brew install \
   opam \
   rust \
   zig \
+  swiftly \
   dart-sdk \
   typst \
   rust-analyzer \
