@@ -96,3 +96,4 @@ sudo apt-get -y install \
     gtypist \
     inkscape \
     libreoffice-calc \
+    dotnet-sdk-10.0 \
