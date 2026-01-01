@@ -15,7 +15,6 @@ sudo apt-get -y upgrade
 wget -O - https://raw.githubusercontent.com/lj-ditrapani/init/main/install.sh | sudo bash
 
 # setup user
-sudo chsh -s /usr/bin/fish $USER
 sudo usermod -aG audio,video,netdev,docker $USER
 
 sudo systemctl stop ssh.service
@@ -47,6 +46,8 @@ sudo rm -fr /etc/cloud && sudo rm -rf /var/lib/cloud/
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 brew install fish
+echo $(which fish) | sudo tee -a /etc/shells
+sudo chsh -s $(which fish) $USER
 # switch to fish so you get tool configs setup for fish
 fish
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
