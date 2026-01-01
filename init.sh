@@ -40,23 +40,18 @@ mkdir -p ~/Downloads
 mkdir -p ~/tmp
 mkdir -p ~/.local/bin
 
-curl -s "https://get.sdkman.io" | bash
-source "$HOME/.sdkman/bin/sdkman-init.sh"
-sdk install java 23.0.2-tem
-sdk install gradle
-sdk install sbt
-sdk install scala
-sdk install kotlin
-
 chmod 700 ~/.gnupg
 sudo apt purge cloud-init -y
 sudo rm -fr /etc/cloud && sudo rm -rf /var/lib/cloud/
 
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+brew install fish
+# switch to fish so you get tool configs setup for fish
+fish
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 brew install \
   neovim \
-  fish \
   nushell \
   ripgrep \
   fd \
@@ -71,7 +66,7 @@ brew install \
   dart-sdk \
   typst \
   rust-analyzer \
-  harper \
+  harper
 
 fnm env --use-on-cd --shell fish | source
 fnm install --lts
@@ -90,6 +85,14 @@ sh <(curl --proto '=https' --tlsv1.2 -L https://nixos.org/nix/install) --daemon
 opam init -y
 eval $(opam env --switch=default)
 opam install ocaml-lsp-server odoc ocamlformat utop merlin
+
+curl -s "https://get.sdkman.io" | bash
+source "$HOME/.sdkman/bin/sdkman-init.sh"
+sdk install java 23.0.2-tem
+sdk install gradle
+sdk install sbt
+sdk install scala
+sdk install kotlin
 
 curl -L "https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-x64" >~/Downloads/vscode.deb
 sudo dpkg -i ~/Downloads/vscode.deb
