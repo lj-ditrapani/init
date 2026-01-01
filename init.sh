@@ -65,7 +65,7 @@ brew install \
   fnm \
   uv \
   opam \
-  rust \
+  rustup \
   zig \
   swiftly \
   dart-sdk \
@@ -76,6 +76,8 @@ brew install \
 fnm env --use-on-cd --shell fish | source
 fnm install --lts
 npm install -g typescript-language-server
+
+rustup default stable
 
 uv tool install ruff@latest ty@latest
 # uv tool install "python-lsp-server[all]"
