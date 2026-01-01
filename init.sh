@@ -73,6 +73,8 @@ fnm env --use-on-cd --shell fish | source
 fnm install --lts
 npm install -g typescript-language-server
 
+// interactive
+rustup-init
 rustup default stable
 
 uv tool install ruff@latest ty@latest
